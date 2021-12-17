@@ -1,3 +1,1 @@
-getgenv().Key = '9wv25WOkbGHaXs2xGITRIynbz';
-
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/CyOfficial/FutureHubV2/main/InternalLoader.lua'), true))()
+print("Your Mom Gay")
