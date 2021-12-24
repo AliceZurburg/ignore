@@ -1,1 +1,3001 @@
-Stalker
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Vanish = {
+	Vanish = Instance.new("ScreenGui"),
+	CoreFrame = Instance.new("Frame"),
+	TopFrame = Instance.new("Frame"),
+	TextLabel = Instance.new("TextLabel"),
+	UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint"),
+	TextLabel_2 = Instance.new("TextLabel"),
+	UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint"),
+	SideFrame = Instance.new("Frame"),
+	Farming = Instance.new("TextButton"),
+	UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint"),
+	Dropping = Instance.new("TextButton"),
+	UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint"),
+	Misc = Instance.new("TextButton"),
+	UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint"),
+	Info = Instance.new("TextButton"),
+	UIAspectRatioConstraint_7 = Instance.new("UIAspectRatioConstraint"),
+	Credits = Instance.new("TextButton"),
+	UIAspectRatioConstraint_8 = Instance.new("UIAspectRatioConstraint"),
+	Setting = Instance.new("TextButton"),
+	UIAspectRatioConstraint_9 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_10 = Instance.new("UIAspectRatioConstraint"),
+	FarmingFrame = Instance.new("ScrollingFrame"),
+	EquipnLiftFrame = Instance.new("ImageLabel"),
+	TextLabel_3 = Instance.new("TextLabel"),
+	UIAspectRatioConstraint_11 = Instance.new("UIAspectRatioConstraint"),
+	Disabled = Instance.new("ImageLabel"),
+	Frame = Instance.new("ImageLabel"),
+	UIAspectRatioConstraint_12 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_13 = Instance.new("UIAspectRatioConstraint"),
+	Active = Instance.new("ImageLabel"),
+	Frame_2 = Instance.new("ImageLabel"),
+	UIAspectRatioConstraint_14 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_15 = Instance.new("UIAspectRatioConstraint"),
+	LiftButton = Instance.new("TextButton"),
+	UIAspectRatioConstraint_16 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_17 = Instance.new("UIAspectRatioConstraint"),
+	AntiAfkFrame = Instance.new("ImageLabel"),
+	TextLabel_4 = Instance.new("TextLabel"),
+	UIAspectRatioConstraint_18 = Instance.new("UIAspectRatioConstraint"),
+	Disabled_2 = Instance.new("ImageLabel"),
+	Frame_3 = Instance.new("ImageLabel"),
+	UIAspectRatioConstraint_19 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_20 = Instance.new("UIAspectRatioConstraint"),
+	Active_2 = Instance.new("ImageLabel"),
+	Frame_4 = Instance.new("ImageLabel"),
+	UIAspectRatioConstraint_21 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_22 = Instance.new("UIAspectRatioConstraint"),
+	AntiAfkButton = Instance.new("TextButton"),
+	UIAspectRatioConstraint_23 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_24 = Instance.new("UIAspectRatioConstraint"),
+	LessPingFrame = Instance.new("ImageLabel"),
+	TextLabel_5 = Instance.new("TextLabel"),
+	UIAspectRatioConstraint_25 = Instance.new("UIAspectRatioConstraint"),
+	Disabled_3 = Instance.new("ImageLabel"),
+	Frame_5 = Instance.new("ImageLabel"),
+	UIAspectRatioConstraint_26 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_27 = Instance.new("UIAspectRatioConstraint"),
+	Active_3 = Instance.new("ImageLabel"),
+	Frame_6 = Instance.new("ImageLabel"),
+	UIAspectRatioConstraint_28 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_29 = Instance.new("UIAspectRatioConstraint"),
+	LessPingButton = Instance.new("TextButton"),
+	UIAspectRatioConstraint_30 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_31 = Instance.new("UIAspectRatioConstraint"),
+	HudFrame = Instance.new("ImageLabel"),
+	TextLabel_6 = Instance.new("TextLabel"),
+	UIAspectRatioConstraint_32 = Instance.new("UIAspectRatioConstraint"),
+	Disabled_4 = Instance.new("ImageLabel"),
+	Frame_7 = Instance.new("ImageLabel"),
+	UIAspectRatioConstraint_33 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_34 = Instance.new("UIAspectRatioConstraint"),
+	Active_4 = Instance.new("ImageLabel"),
+	Frame_8 = Instance.new("ImageLabel"),
+	UIAspectRatioConstraint_35 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_36 = Instance.new("UIAspectRatioConstraint"),
+	RemoveHudButton = Instance.new("TextButton"),
+	UIAspectRatioConstraint_37 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_38 = Instance.new("UIAspectRatioConstraint"),
+	CamFrame = Instance.new("ImageLabel"),
+	TextLabel_7 = Instance.new("TextLabel"),
+	UIAspectRatioConstraint_39 = Instance.new("UIAspectRatioConstraint"),
+	Disabled_5 = Instance.new("ImageLabel"),
+	Frame_9 = Instance.new("ImageLabel"),
+	UIAspectRatioConstraint_40 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_41 = Instance.new("UIAspectRatioConstraint"),
+	Active_5 = Instance.new("ImageLabel"),
+	Frame_10 = Instance.new("ImageLabel"),
+	UIAspectRatioConstraint_42 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_43 = Instance.new("UIAspectRatioConstraint"),
+	RemoveCamButton = Instance.new("TextButton"),
+	UIAspectRatioConstraint_44 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_45 = Instance.new("UIAspectRatioConstraint"),
+	LockFrame = Instance.new("ImageLabel"),
+	TextLabel_8 = Instance.new("TextLabel"),
+	UIAspectRatioConstraint_46 = Instance.new("UIAspectRatioConstraint"),
+	Disabled_6 = Instance.new("ImageLabel"),
+	Frame_11 = Instance.new("ImageLabel"),
+	UIAspectRatioConstraint_47 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_48 = Instance.new("UIAspectRatioConstraint"),
+	Active_6 = Instance.new("ImageLabel"),
+	Frame_12 = Instance.new("ImageLabel"),
+	UIAspectRatioConstraint_49 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_50 = Instance.new("UIAspectRatioConstraint"),
+	LockPlayerButton = Instance.new("TextButton"),
+	UIAspectRatioConstraint_51 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_52 = Instance.new("UIAspectRatioConstraint"),
+	TpFrame = Instance.new("ImageLabel"),
+	TptoRumbleButton = Instance.new("TextButton"),
+	UIAspectRatioConstraint_53 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_54 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_55 = Instance.new("UIAspectRatioConstraint"),
+	DroppingFrame = Instance.new("ScrollingFrame"),
+	PlayerToDropFrame = Instance.new("ImageLabel"),
+	PlayerToDrop = Instance.new("TextBox"),
+	UIAspectRatioConstraint_56 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_57 = Instance.new("UIAspectRatioConstraint"),
+	FollowFrame = Instance.new("ImageLabel"),
+	TextLabel_9 = Instance.new("TextLabel"),
+	UIAspectRatioConstraint_58 = Instance.new("UIAspectRatioConstraint"),
+	Disabled_7 = Instance.new("ImageLabel"),
+	Frame_13 = Instance.new("ImageLabel"),
+	UIAspectRatioConstraint_59 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_60 = Instance.new("UIAspectRatioConstraint"),
+	Active_7 = Instance.new("ImageLabel"),
+	Frame_14 = Instance.new("ImageLabel"),
+	UIAspectRatioConstraint_61 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_62 = Instance.new("UIAspectRatioConstraint"),
+	FollowButton = Instance.new("TextButton"),
+	UIAspectRatioConstraint_63 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_64 = Instance.new("UIAspectRatioConstraint"),
+	EquipFrame = Instance.new("ImageLabel"),
+	TextLabel_10 = Instance.new("TextLabel"),
+	UIAspectRatioConstraint_65 = Instance.new("UIAspectRatioConstraint"),
+	Disabled_8 = Instance.new("ImageLabel"),
+	Frame_15 = Instance.new("ImageLabel"),
+	UIAspectRatioConstraint_66 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_67 = Instance.new("UIAspectRatioConstraint"),
+	Active_8 = Instance.new("ImageLabel"),
+	Frame_16 = Instance.new("ImageLabel"),
+	UIAspectRatioConstraint_68 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_69 = Instance.new("UIAspectRatioConstraint"),
+	EquipButton = Instance.new("TextButton"),
+	UIAspectRatioConstraint_70 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_71 = Instance.new("UIAspectRatioConstraint"),
+	GodFrame = Instance.new("ImageLabel"),
+	GodButton = Instance.new("TextButton"),
+	UIAspectRatioConstraint_72 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_73 = Instance.new("UIAspectRatioConstraint"),
+	ToolCountFrame = Instance.new("ImageLabel"),
+	ToolCount = Instance.new("TextLabel"),
+	UIAspectRatioConstraint_74 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_75 = Instance.new("UIAspectRatioConstraint"),
+	ToolCountToggleFrame = Instance.new("ImageLabel"),
+	TextLabel_11 = Instance.new("TextLabel"),
+	UIAspectRatioConstraint_76 = Instance.new("UIAspectRatioConstraint"),
+	Disabled_9 = Instance.new("ImageLabel"),
+	Frame_17 = Instance.new("ImageLabel"),
+	UIAspectRatioConstraint_77 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_78 = Instance.new("UIAspectRatioConstraint"),
+	Active_9 = Instance.new("ImageLabel"),
+	Frame_18 = Instance.new("ImageLabel"),
+	UIAspectRatioConstraint_79 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_80 = Instance.new("UIAspectRatioConstraint"),
+	ToolCountButton = Instance.new("TextButton"),
+	UIAspectRatioConstraint_81 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_82 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_83 = Instance.new("UIAspectRatioConstraint"),
+	MiscFrame = Instance.new("ScrollingFrame"),
+	SmallFrame = Instance.new("ImageLabel"),
+	Small = Instance.new("TextButton"),
+	UIAspectRatioConstraint_84 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_85 = Instance.new("UIAspectRatioConstraint"),
+	GiveGlovesFrame = Instance.new("ImageLabel"),
+	GiveGloves = Instance.new("TextButton"),
+	UIAspectRatioConstraint_86 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_87 = Instance.new("UIAspectRatioConstraint"),
+	RainbowGlovesFrame = Instance.new("ImageLabel"),
+	TextLabel_12 = Instance.new("TextLabel"),
+	UIAspectRatioConstraint_88 = Instance.new("UIAspectRatioConstraint"),
+	Disabled_10 = Instance.new("ImageLabel"),
+	Frame_19 = Instance.new("ImageLabel"),
+	UIAspectRatioConstraint_89 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_90 = Instance.new("UIAspectRatioConstraint"),
+	Active_10 = Instance.new("ImageLabel"),
+	Frame_20 = Instance.new("ImageLabel"),
+	UIAspectRatioConstraint_91 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_92 = Instance.new("UIAspectRatioConstraint"),
+	RaimbowGloves = Instance.new("TextButton"),
+	UIAspectRatioConstraint_93 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_94 = Instance.new("UIAspectRatioConstraint"),
+	AutoJoinFrame = Instance.new("ImageLabel"),
+	TextLabel_13 = Instance.new("TextLabel"),
+	UIAspectRatioConstraint_95 = Instance.new("UIAspectRatioConstraint"),
+	Disabled_11 = Instance.new("ImageLabel"),
+	Frame_21 = Instance.new("ImageLabel"),
+	UIAspectRatioConstraint_96 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_97 = Instance.new("UIAspectRatioConstraint"),
+	Active_11 = Instance.new("ImageLabel"),
+	Frame_22 = Instance.new("ImageLabel"),
+	UIAspectRatioConstraint_98 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_99 = Instance.new("UIAspectRatioConstraint"),
+	AutoJoin = Instance.new("TextButton"),
+	UIAspectRatioConstraint_100 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_101 = Instance.new("UIAspectRatioConstraint"),
+	AutoResetFrame = Instance.new("ImageLabel"),
+	TextLabel_14 = Instance.new("TextLabel"),
+	UIAspectRatioConstraint_102 = Instance.new("UIAspectRatioConstraint"),
+	Disabled_12 = Instance.new("ImageLabel"),
+	Frame_23 = Instance.new("ImageLabel"),
+	UIAspectRatioConstraint_103 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_104 = Instance.new("UIAspectRatioConstraint"),
+	Active_12 = Instance.new("ImageLabel"),
+	Frame_24 = Instance.new("ImageLabel"),
+	UIAspectRatioConstraint_105 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_106 = Instance.new("UIAspectRatioConstraint"),
+	AutoReset = Instance.new("TextButton"),
+	UIAspectRatioConstraint_107 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_108 = Instance.new("UIAspectRatioConstraint"),
+	PlayerToKillFrame = Instance.new("ImageLabel"),
+	PlayerToKill = Instance.new("TextBox"),
+	UIAspectRatioConstraint_109 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_110 = Instance.new("UIAspectRatioConstraint"),
+	PlayerToKillButtonFrame = Instance.new("ImageLabel"),
+	KillPlayer = Instance.new("TextButton"),
+	UIAspectRatioConstraint_111 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_112 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_113 = Instance.new("UIAspectRatioConstraint"),
+	InfoFrame = Instance.new("ScrollingFrame"),
+	StrenthGainedFrame = Instance.new("ImageLabel"),
+	StrengthGained = Instance.new("TextLabel"),
+	UIAspectRatioConstraint_114 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_115 = Instance.new("UIAspectRatioConstraint"),
+	WinsGainedFrame = Instance.new("ImageLabel"),
+	WinsGained = Instance.new("TextLabel"),
+	UIAspectRatioConstraint_116 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_117 = Instance.new("UIAspectRatioConstraint"),
+	PlayerToSpyFrame = Instance.new("ImageLabel"),
+	PlayerToSpy = Instance.new("TextBox"),
+	UIAspectRatioConstraint_118 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_119 = Instance.new("UIAspectRatioConstraint"),
+	PlayerToSpyButtonFrame = Instance.new("ImageLabel"),
+	PlayerToSpyButton = Instance.new("TextButton"),
+	UIAspectRatioConstraint_120 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_121 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_122 = Instance.new("UIAspectRatioConstraint"),
+	CreditsFrame = Instance.new("ScrollingFrame"),
+	Discord = Instance.new("ImageLabel"),
+	TextLabel_15 = Instance.new("TextLabel"),
+	UIAspectRatioConstraint_123 = Instance.new("UIAspectRatioConstraint"),
+	Disabled_13 = Instance.new("ImageLabel"),
+	Frame_25 = Instance.new("ImageLabel"),
+	UIAspectRatioConstraint_124 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_125 = Instance.new("UIAspectRatioConstraint"),
+	DiscordButton = Instance.new("TextButton"),
+	UIAspectRatioConstraint_126 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_127 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_128 = Instance.new("UIAspectRatioConstraint"),
+	SettingFrame = Instance.new("ScrollingFrame"),
+	ToolFrame = Instance.new("ImageLabel"),
+	TextLabel_16 = Instance.new("TextLabel"),
+	UIAspectRatioConstraint_129 = Instance.new("UIAspectRatioConstraint"),
+	ToolChoice = Instance.new("TextButton"),
+	UIAspectRatioConstraint_130 = Instance.new("UIAspectRatioConstraint"),
+	ToolOption = Instance.new("TextButton"),
+	UIAspectRatioConstraint_131 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_132 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_133 = Instance.new("UIAspectRatioConstraint"),
+	BlueFog = Instance.new("ImageLabel"),
+	TextLabel_17 = Instance.new("TextLabel"),
+	UIAspectRatioConstraint_134 = Instance.new("UIAspectRatioConstraint"),
+	BlueFogButton = Instance.new("TextButton"),
+	UIAspectRatioConstraint_135 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_136 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint_137 = Instance.new("UIAspectRatioConstraint"),
+}
+
+--Properties:
+
+Vanish.Vanish.Name = "Vanish"
+Vanish.Vanish.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Vanish.CoreFrame.Name = "CoreFrame"
+Vanish.CoreFrame.Parent = Vanish.Vanish
+Vanish.CoreFrame.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+Vanish.CoreFrame.Position = UDim2.new(0.334972292, 0, 0.300613493, 0)
+Vanish.CoreFrame.Size = UDim2.new(0, 537, 0, 320)
+
+Vanish.TopFrame.Name = "TopFrame"
+Vanish.TopFrame.Parent = Vanish.CoreFrame
+Vanish.TopFrame.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Vanish.TopFrame.BorderColor3 = Color3.fromRGB(152, 152, 152)
+Vanish.TopFrame.Size = UDim2.new(0, 537, 0, 34)
+
+Vanish.TextLabel.Parent = Vanish.TopFrame
+Vanish.TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.TextLabel.BackgroundTransparency = 1.000
+Vanish.TextLabel.Position = UDim2.new(0.011173184, 0, 0, 0)
+Vanish.TextLabel.Size = UDim2.new(0, 114, 0, 34)
+Vanish.TextLabel.Text = "Vanish Hub"
+Vanish.TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.TextLabel.TextScaled = true
+Vanish.TextLabel.TextSize = 14.000
+Vanish.TextLabel.TextWrapped = true
+
+Vanish.UIAspectRatioConstraint.Parent = Vanish.TextLabel
+Vanish.UIAspectRatioConstraint.AspectRatio = 3.353
+
+Vanish.TextLabel_2.Parent = Vanish.TopFrame
+Vanish.TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.TextLabel_2.BackgroundTransparency = 1.000
+Vanish.TextLabel_2.Position = UDim2.new(0.826815665, 0, 0, 0)
+Vanish.TextLabel_2.Size = UDim2.new(0, 92, 0, 34)
+Vanish.TextLabel_2.Text = "v3"
+Vanish.TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.TextLabel_2.TextScaled = true
+Vanish.TextLabel_2.TextSize = 14.000
+Vanish.TextLabel_2.TextWrapped = true
+
+Vanish.UIAspectRatioConstraint_2.Parent = Vanish.TextLabel_2
+Vanish.UIAspectRatioConstraint_2.AspectRatio = 2.706
+
+Vanish.UIAspectRatioConstraint_3.Parent = Vanish.TopFrame
+Vanish.UIAspectRatioConstraint_3.AspectRatio = 15.794
+
+Vanish.SideFrame.Name = "SideFrame"
+Vanish.SideFrame.Parent = Vanish.CoreFrame
+Vanish.SideFrame.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Vanish.SideFrame.BorderColor3 = Color3.fromRGB(152, 152, 152)
+Vanish.SideFrame.Position = UDim2.new(0, 0, 0.109375, 0)
+Vanish.SideFrame.Size = UDim2.new(0, 120, 0, 285)
+
+Vanish.Farming.Name = "Farming"
+Vanish.Farming.Parent = Vanish.SideFrame
+Vanish.Farming.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Vanish.Farming.BorderColor3 = Color3.fromRGB(138, 138, 138)
+Vanish.Farming.Size = UDim2.new(0, 119, 0, 43)
+Vanish.Farming.Text = "Farming"
+Vanish.Farming.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Farming.TextScaled = true
+Vanish.Farming.TextSize = 25.000
+Vanish.Farming.TextWrapped = true
+
+Vanish.UIAspectRatioConstraint_4.Parent = Vanish.Farming
+Vanish.UIAspectRatioConstraint_4.AspectRatio = 2.767
+
+Vanish.Dropping.Name = "Dropping"
+Vanish.Dropping.Parent = Vanish.SideFrame
+Vanish.Dropping.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Vanish.Dropping.BorderColor3 = Color3.fromRGB(138, 138, 138)
+Vanish.Dropping.Position = UDim2.new(0, 0, 0.150877193, 0)
+Vanish.Dropping.Size = UDim2.new(0, 119, 0, 43)
+Vanish.Dropping.Text = "Dropping"
+Vanish.Dropping.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Dropping.TextScaled = true
+Vanish.Dropping.TextSize = 25.000
+Vanish.Dropping.TextWrapped = true
+
+Vanish.UIAspectRatioConstraint_5.Parent = Vanish.Dropping
+Vanish.UIAspectRatioConstraint_5.AspectRatio = 2.767
+
+Vanish.Misc.Name = "Misc"
+Vanish.Misc.Parent = Vanish.SideFrame
+Vanish.Misc.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Vanish.Misc.BorderColor3 = Color3.fromRGB(138, 138, 138)
+Vanish.Misc.Position = UDim2.new(0, 0, 0.301754385, 0)
+Vanish.Misc.Size = UDim2.new(0, 119, 0, 43)
+Vanish.Misc.Text = "Misc"
+Vanish.Misc.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Misc.TextScaled = true
+Vanish.Misc.TextSize = 25.000
+Vanish.Misc.TextWrapped = true
+
+Vanish.UIAspectRatioConstraint_6.Parent = Vanish.Misc
+Vanish.UIAspectRatioConstraint_6.AspectRatio = 2.767
+
+Vanish.Info.Name = "Info"
+Vanish.Info.Parent = Vanish.SideFrame
+Vanish.Info.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Vanish.Info.BorderColor3 = Color3.fromRGB(138, 138, 138)
+Vanish.Info.Position = UDim2.new(0, 0, 0.452631593, 0)
+Vanish.Info.Size = UDim2.new(0, 119, 0, 43)
+Vanish.Info.Text = "Info"
+Vanish.Info.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Info.TextScaled = true
+Vanish.Info.TextSize = 25.000
+Vanish.Info.TextWrapped = true
+
+Vanish.UIAspectRatioConstraint_7.Parent = Vanish.Info
+Vanish.UIAspectRatioConstraint_7.AspectRatio = 2.767
+
+Vanish.Credits.Name = "Credits"
+Vanish.Credits.Parent = Vanish.SideFrame
+Vanish.Credits.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Vanish.Credits.BorderColor3 = Color3.fromRGB(138, 138, 138)
+Vanish.Credits.Position = UDim2.new(0, 0, 0.60350877, 0)
+Vanish.Credits.Size = UDim2.new(0, 119, 0, 43)
+Vanish.Credits.Text = "Credits"
+Vanish.Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Credits.TextScaled = true
+Vanish.Credits.TextSize = 25.000
+Vanish.Credits.TextWrapped = true
+
+Vanish.UIAspectRatioConstraint_8.Parent = Vanish.Credits
+Vanish.UIAspectRatioConstraint_8.AspectRatio = 2.767
+
+Vanish.Setting.Name = "Setting"
+Vanish.Setting.Parent = Vanish.SideFrame
+Vanish.Setting.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Vanish.Setting.BorderColor3 = Color3.fromRGB(138, 138, 138)
+Vanish.Setting.Position = UDim2.new(0, 0, 0.754385948, 0)
+Vanish.Setting.Size = UDim2.new(0, 119, 0, 43)
+Vanish.Setting.Text = "Settings"
+Vanish.Setting.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Setting.TextScaled = true
+Vanish.Setting.TextSize = 25.000
+Vanish.Setting.TextWrapped = true
+
+Vanish.UIAspectRatioConstraint_9.Parent = Vanish.Setting
+Vanish.UIAspectRatioConstraint_9.AspectRatio = 2.767
+
+Vanish.UIAspectRatioConstraint_10.Parent = Vanish.SideFrame
+Vanish.UIAspectRatioConstraint_10.AspectRatio = 0.421
+
+Vanish.FarmingFrame.Name = "FarmingFrame"
+Vanish.FarmingFrame.Parent = Vanish.CoreFrame
+Vanish.FarmingFrame.Active = true
+Vanish.FarmingFrame.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Vanish.FarmingFrame.BorderColor3 = Color3.fromRGB(138, 138, 138)
+Vanish.FarmingFrame.Position = UDim2.new(0.224999994, 0, 0.108999997, 0)
+Vanish.FarmingFrame.Size = UDim2.new(0, 416, 0, 285)
+Vanish.FarmingFrame.Visible = true
+
+Vanish.EquipnLiftFrame.Name = "EquipnLiftFrame"
+Vanish.EquipnLiftFrame.Parent = Vanish.FarmingFrame
+Vanish.EquipnLiftFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.EquipnLiftFrame.BackgroundTransparency = 1.000
+Vanish.EquipnLiftFrame.Position = UDim2.new(0.0144230779, 0, 0.0204580221, 0)
+Vanish.EquipnLiftFrame.Size = UDim2.new(0, 388, 0, 38)
+Vanish.EquipnLiftFrame.Image = "rbxassetid://3570695787"
+Vanish.EquipnLiftFrame.ImageColor3 = Color3.fromRGB(109, 109, 109)
+Vanish.EquipnLiftFrame.ScaleType = Enum.ScaleType.Slice
+Vanish.EquipnLiftFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.EquipnLiftFrame.SliceScale = 0.120
+
+Vanish.TextLabel_3.Parent = Vanish.EquipnLiftFrame
+Vanish.TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.TextLabel_3.BackgroundTransparency = 1.000
+Vanish.TextLabel_3.Position = UDim2.new(0.0231958758, 0, 0, 0)
+Vanish.TextLabel_3.Size = UDim2.new(0, 93, 0, 38)
+Vanish.TextLabel_3.Text = "Auto Lift"
+Vanish.TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.TextLabel_3.TextScaled = true
+Vanish.TextLabel_3.TextSize = 14.000
+Vanish.TextLabel_3.TextWrapped = true
+
+Vanish.UIAspectRatioConstraint_11.Parent = Vanish.TextLabel_3
+Vanish.UIAspectRatioConstraint_11.AspectRatio = 2.447
+
+Vanish.Disabled.Name = "Disabled"
+Vanish.Disabled.Parent = Vanish.EquipnLiftFrame
+Vanish.Disabled.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Disabled.BackgroundTransparency = 1.000
+Vanish.Disabled.Position = UDim2.new(0.835502684, 0, 0.342105269, 0)
+Vanish.Disabled.Size = UDim2.new(0, 42, 0, 12)
+Vanish.Disabled.Image = "rbxassetid://3570695787"
+Vanish.Disabled.ImageColor3 = Color3.fromRGB(255, 0, 0)
+Vanish.Disabled.ScaleType = Enum.ScaleType.Slice
+Vanish.Disabled.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Disabled.SliceScale = 0.120
+
+Vanish.Frame.Name = "Frame"
+Vanish.Frame.Parent = Vanish.Disabled
+Vanish.Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Frame.BackgroundTransparency = 1.000
+Vanish.Frame.Position = UDim2.new(-0.166666672, 0, -0.5, 0)
+Vanish.Frame.Size = UDim2.new(0, 22, 0, 23)
+Vanish.Frame.Image = "rbxassetid://3570695787"
+Vanish.Frame.ScaleType = Enum.ScaleType.Slice
+Vanish.Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Frame.SliceScale = 0.120
+
+Vanish.UIAspectRatioConstraint_12.Parent = Vanish.Frame
+Vanish.UIAspectRatioConstraint_12.AspectRatio = 0.957
+
+Vanish.UIAspectRatioConstraint_13.Parent = Vanish.Disabled
+Vanish.UIAspectRatioConstraint_13.AspectRatio = 3.500
+
+Vanish.Active.Name = "Active"
+Vanish.Active.Parent = Vanish.EquipnLiftFrame
+Vanish.Active.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Active.BackgroundTransparency = 1.000
+Vanish.Active.Position = UDim2.new(0.835502684, 0, 0.342105269, 0)
+Vanish.Active.Size = UDim2.new(0, 42, 0, 12)
+Vanish.Active.Visible = false
+Vanish.Active.Image = "rbxassetid://3570695787"
+Vanish.Active.ImageColor3 = Color3.fromRGB(0, 255, 0)
+Vanish.Active.ScaleType = Enum.ScaleType.Slice
+Vanish.Active.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Active.SliceScale = 0.120
+
+Vanish.Frame_2.Name = "Frame"
+Vanish.Frame_2.Parent = Vanish.Active
+Vanish.Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Frame_2.BackgroundTransparency = 1.000
+Vanish.Frame_2.Position = UDim2.new(0.476190448, 0, -0.5, 0)
+Vanish.Frame_2.Size = UDim2.new(0, 22, 0, 23)
+Vanish.Frame_2.Image = "rbxassetid://3570695787"
+Vanish.Frame_2.ScaleType = Enum.ScaleType.Slice
+Vanish.Frame_2.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Frame_2.SliceScale = 0.120
+
+Vanish.UIAspectRatioConstraint_14.Parent = Vanish.Frame_2
+Vanish.UIAspectRatioConstraint_14.AspectRatio = 0.957
+
+Vanish.UIAspectRatioConstraint_15.Parent = Vanish.Active
+Vanish.UIAspectRatioConstraint_15.AspectRatio = 3.500
+
+Vanish.LiftButton.Name = "LiftButton"
+Vanish.LiftButton.Parent = Vanish.EquipnLiftFrame
+Vanish.LiftButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.LiftButton.BackgroundTransparency = 1.000
+Vanish.LiftButton.Position = UDim2.new(0.817461491, 0, 0.184210524, 0)
+Vanish.LiftButton.Size = UDim2.new(0, 48, 0, 23)
+Vanish.LiftButton.Font = Enum.Font.SourceSans
+Vanish.LiftButton.Text = ""
+Vanish.LiftButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+Vanish.LiftButton.TextSize = 14.000
+
+Vanish.UIAspectRatioConstraint_16.Parent = Vanish.LiftButton
+Vanish.UIAspectRatioConstraint_16.AspectRatio = 2.087
+
+Vanish.UIAspectRatioConstraint_17.Parent = Vanish.EquipnLiftFrame
+Vanish.UIAspectRatioConstraint_17.AspectRatio = 10.211
+
+Vanish.AntiAfkFrame.Name = "AntiAfkFrame"
+Vanish.AntiAfkFrame.Parent = Vanish.FarmingFrame
+Vanish.AntiAfkFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.AntiAfkFrame.BackgroundTransparency = 1.000
+Vanish.AntiAfkFrame.Position = UDim2.new(0.0140000004, 0, 0.100000001, 0)
+Vanish.AntiAfkFrame.Size = UDim2.new(0, 388, 0, 38)
+Vanish.AntiAfkFrame.Image = "rbxassetid://3570695787"
+Vanish.AntiAfkFrame.ImageColor3 = Color3.fromRGB(109, 109, 109)
+Vanish.AntiAfkFrame.ScaleType = Enum.ScaleType.Slice
+Vanish.AntiAfkFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.AntiAfkFrame.SliceScale = 0.120
+
+Vanish.TextLabel_4.Parent = Vanish.AntiAfkFrame
+Vanish.TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.TextLabel_4.BackgroundTransparency = 1.000
+Vanish.TextLabel_4.Position = UDim2.new(0.0231958758, 0, 0, 0)
+Vanish.TextLabel_4.Size = UDim2.new(0, 93, 0, 38)
+Vanish.TextLabel_4.Text = "Anti-Afk"
+Vanish.TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.TextLabel_4.TextScaled = true
+Vanish.TextLabel_4.TextSize = 14.000
+Vanish.TextLabel_4.TextWrapped = true
+
+Vanish.UIAspectRatioConstraint_18.Parent = Vanish.TextLabel_4
+Vanish.UIAspectRatioConstraint_18.AspectRatio = 2.447
+
+Vanish.Disabled_2.Name = "Disabled"
+Vanish.Disabled_2.Parent = Vanish.AntiAfkFrame
+Vanish.Disabled_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Disabled_2.BackgroundTransparency = 1.000
+Vanish.Disabled_2.Position = UDim2.new(0.835502684, 0, 0.342105269, 0)
+Vanish.Disabled_2.Size = UDim2.new(0, 42, 0, 12)
+Vanish.Disabled_2.Image = "rbxassetid://3570695787"
+Vanish.Disabled_2.ImageColor3 = Color3.fromRGB(255, 0, 0)
+Vanish.Disabled_2.ScaleType = Enum.ScaleType.Slice
+Vanish.Disabled_2.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Disabled_2.SliceScale = 0.120
+
+Vanish.Frame_3.Name = "Frame"
+Vanish.Frame_3.Parent = Vanish.Disabled_2
+Vanish.Frame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Frame_3.BackgroundTransparency = 1.000
+Vanish.Frame_3.Position = UDim2.new(-0.166666672, 0, -0.5, 0)
+Vanish.Frame_3.Size = UDim2.new(0, 22, 0, 23)
+Vanish.Frame_3.Image = "rbxassetid://3570695787"
+Vanish.Frame_3.ScaleType = Enum.ScaleType.Slice
+Vanish.Frame_3.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Frame_3.SliceScale = 0.120
+
+Vanish.UIAspectRatioConstraint_19.Parent = Vanish.Frame_3
+Vanish.UIAspectRatioConstraint_19.AspectRatio = 0.957
+
+Vanish.UIAspectRatioConstraint_20.Parent = Vanish.Disabled_2
+Vanish.UIAspectRatioConstraint_20.AspectRatio = 3.500
+
+Vanish.Active_2.Name = "Active"
+Vanish.Active_2.Parent = Vanish.AntiAfkFrame
+Vanish.Active_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Active_2.BackgroundTransparency = 1.000
+Vanish.Active_2.Position = UDim2.new(0.835502684, 0, 0.342105269, 0)
+Vanish.Active_2.Size = UDim2.new(0, 42, 0, 12)
+Vanish.Active_2.Visible = false
+Vanish.Active_2.Image = "rbxassetid://3570695787"
+Vanish.Active_2.ImageColor3 = Color3.fromRGB(0, 255, 0)
+Vanish.Active_2.ScaleType = Enum.ScaleType.Slice
+Vanish.Active_2.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Active_2.SliceScale = 0.120
+
+Vanish.Frame_4.Name = "Frame"
+Vanish.Frame_4.Parent = Vanish.Active_2
+Vanish.Frame_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Frame_4.BackgroundTransparency = 1.000
+Vanish.Frame_4.Position = UDim2.new(0.476190448, 0, -0.5, 0)
+Vanish.Frame_4.Size = UDim2.new(0, 22, 0, 23)
+Vanish.Frame_4.Image = "rbxassetid://3570695787"
+Vanish.Frame_4.ScaleType = Enum.ScaleType.Slice
+Vanish.Frame_4.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Frame_4.SliceScale = 0.120
+
+Vanish.UIAspectRatioConstraint_21.Parent = Vanish.Frame_4
+Vanish.UIAspectRatioConstraint_21.AspectRatio = 0.957
+
+Vanish.UIAspectRatioConstraint_22.Parent = Vanish.Active_2
+Vanish.UIAspectRatioConstraint_22.AspectRatio = 3.500
+
+Vanish.AntiAfkButton.Name = "AntiAfkButton"
+Vanish.AntiAfkButton.Parent = Vanish.AntiAfkFrame
+Vanish.AntiAfkButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.AntiAfkButton.BackgroundTransparency = 1.000
+Vanish.AntiAfkButton.Position = UDim2.new(0.817461491, 0, 0.184210524, 0)
+Vanish.AntiAfkButton.Size = UDim2.new(0, 48, 0, 23)
+Vanish.AntiAfkButton.Font = Enum.Font.SourceSans
+Vanish.AntiAfkButton.Text = ""
+Vanish.AntiAfkButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+Vanish.AntiAfkButton.TextSize = 14.000
+
+Vanish.UIAspectRatioConstraint_23.Parent = Vanish.AntiAfkButton
+Vanish.UIAspectRatioConstraint_23.AspectRatio = 2.087
+
+Vanish.UIAspectRatioConstraint_24.Parent = Vanish.AntiAfkFrame
+Vanish.UIAspectRatioConstraint_24.AspectRatio = 10.211
+
+Vanish.LessPingFrame.Name = "LessPingFrame"
+Vanish.LessPingFrame.Parent = Vanish.FarmingFrame
+Vanish.LessPingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.LessPingFrame.BackgroundTransparency = 1.000
+Vanish.LessPingFrame.Position = UDim2.new(0.0140000004, 0, 0.180000007, 0)
+Vanish.LessPingFrame.Size = UDim2.new(0, 388, 0, 38)
+Vanish.LessPingFrame.Image = "rbxassetid://3570695787"
+Vanish.LessPingFrame.ImageColor3 = Color3.fromRGB(109, 109, 109)
+Vanish.LessPingFrame.ScaleType = Enum.ScaleType.Slice
+Vanish.LessPingFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.LessPingFrame.SliceScale = 0.120
+
+Vanish.TextLabel_5.Parent = Vanish.LessPingFrame
+Vanish.TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.TextLabel_5.BackgroundTransparency = 1.000
+Vanish.TextLabel_5.Position = UDim2.new(0.0231958758, 0, 0, 0)
+Vanish.TextLabel_5.Size = UDim2.new(0, 93, 0, 38)
+Vanish.TextLabel_5.Text = "Less Ping"
+Vanish.TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.TextLabel_5.TextScaled = true
+Vanish.TextLabel_5.TextSize = 14.000
+Vanish.TextLabel_5.TextWrapped = true
+
+Vanish.UIAspectRatioConstraint_25.Parent = Vanish.TextLabel_5
+Vanish.UIAspectRatioConstraint_25.AspectRatio = 2.447
+
+Vanish.Disabled_3.Name = "Disabled"
+Vanish.Disabled_3.Parent = Vanish.LessPingFrame
+Vanish.Disabled_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Disabled_3.BackgroundTransparency = 1.000
+Vanish.Disabled_3.Position = UDim2.new(0.835502684, 0, 0.342105269, 0)
+Vanish.Disabled_3.Size = UDim2.new(0, 42, 0, 12)
+Vanish.Disabled_3.Image = "rbxassetid://3570695787"
+Vanish.Disabled_3.ImageColor3 = Color3.fromRGB(255, 0, 0)
+Vanish.Disabled_3.ScaleType = Enum.ScaleType.Slice
+Vanish.Disabled_3.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Disabled_3.SliceScale = 0.120
+
+Vanish.Frame_5.Name = "Frame"
+Vanish.Frame_5.Parent = Vanish.Disabled_3
+Vanish.Frame_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Frame_5.BackgroundTransparency = 1.000
+Vanish.Frame_5.Position = UDim2.new(-0.166666672, 0, -0.5, 0)
+Vanish.Frame_5.Size = UDim2.new(0, 22, 0, 23)
+Vanish.Frame_5.Image = "rbxassetid://3570695787"
+Vanish.Frame_5.ScaleType = Enum.ScaleType.Slice
+Vanish.Frame_5.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Frame_5.SliceScale = 0.120
+
+Vanish.UIAspectRatioConstraint_26.Parent = Vanish.Frame_5
+Vanish.UIAspectRatioConstraint_26.AspectRatio = 0.957
+
+Vanish.UIAspectRatioConstraint_27.Parent = Vanish.Disabled_3
+Vanish.UIAspectRatioConstraint_27.AspectRatio = 3.500
+
+Vanish.Active_3.Name = "Active"
+Vanish.Active_3.Parent = Vanish.LessPingFrame
+Vanish.Active_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Active_3.BackgroundTransparency = 1.000
+Vanish.Active_3.Position = UDim2.new(0.835502684, 0, 0.342105269, 0)
+Vanish.Active_3.Size = UDim2.new(0, 42, 0, 12)
+Vanish.Active_3.Visible = false
+Vanish.Active_3.Image = "rbxassetid://3570695787"
+Vanish.Active_3.ImageColor3 = Color3.fromRGB(0, 255, 0)
+Vanish.Active_3.ScaleType = Enum.ScaleType.Slice
+Vanish.Active_3.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Active_3.SliceScale = 0.120
+
+Vanish.Frame_6.Name = "Frame"
+Vanish.Frame_6.Parent = Vanish.Active_3
+Vanish.Frame_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Frame_6.BackgroundTransparency = 1.000
+Vanish.Frame_6.Position = UDim2.new(0.476190448, 0, -0.5, 0)
+Vanish.Frame_6.Size = UDim2.new(0, 22, 0, 23)
+Vanish.Frame_6.Image = "rbxassetid://3570695787"
+Vanish.Frame_6.ScaleType = Enum.ScaleType.Slice
+Vanish.Frame_6.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Frame_6.SliceScale = 0.120
+
+Vanish.UIAspectRatioConstraint_28.Parent = Vanish.Frame_6
+Vanish.UIAspectRatioConstraint_28.AspectRatio = 0.957
+
+Vanish.UIAspectRatioConstraint_29.Parent = Vanish.Active_3
+Vanish.UIAspectRatioConstraint_29.AspectRatio = 3.500
+
+Vanish.LessPingButton.Name = "LessPingButton"
+Vanish.LessPingButton.Parent = Vanish.LessPingFrame
+Vanish.LessPingButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.LessPingButton.BackgroundTransparency = 1.000
+Vanish.LessPingButton.Position = UDim2.new(0.817461491, 0, 0.184210524, 0)
+Vanish.LessPingButton.Size = UDim2.new(0, 48, 0, 23)
+Vanish.LessPingButton.Font = Enum.Font.SourceSans
+Vanish.LessPingButton.Text = ""
+Vanish.LessPingButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+Vanish.LessPingButton.TextSize = 14.000
+
+Vanish.UIAspectRatioConstraint_30.Parent = Vanish.LessPingButton
+Vanish.UIAspectRatioConstraint_30.AspectRatio = 2.087
+
+Vanish.UIAspectRatioConstraint_31.Parent = Vanish.LessPingFrame
+Vanish.UIAspectRatioConstraint_31.AspectRatio = 10.211
+
+Vanish.HudFrame.Name = "HudFrame"
+Vanish.HudFrame.Parent = Vanish.FarmingFrame
+Vanish.HudFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.HudFrame.BackgroundTransparency = 1.000
+Vanish.HudFrame.Position = UDim2.new(0.0140000004, 0, 0.25999999, 0)
+Vanish.HudFrame.Size = UDim2.new(0, 388, 0, 38)
+Vanish.HudFrame.Image = "rbxassetid://3570695787"
+Vanish.HudFrame.ImageColor3 = Color3.fromRGB(109, 109, 109)
+Vanish.HudFrame.ScaleType = Enum.ScaleType.Slice
+Vanish.HudFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.HudFrame.SliceScale = 0.120
+
+Vanish.TextLabel_6.Parent = Vanish.HudFrame
+Vanish.TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.TextLabel_6.BackgroundTransparency = 1.000
+Vanish.TextLabel_6.Position = UDim2.new(0.0231958758, 0, 0, 0)
+Vanish.TextLabel_6.Size = UDim2.new(0, 114, 0, 38)
+Vanish.TextLabel_6.Text = "Remove HUD"
+Vanish.TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.TextLabel_6.TextScaled = true
+Vanish.TextLabel_6.TextSize = 14.000
+Vanish.TextLabel_6.TextWrapped = true
+
+Vanish.UIAspectRatioConstraint_32.Parent = Vanish.TextLabel_6
+Vanish.UIAspectRatioConstraint_32.AspectRatio = 3.000
+
+Vanish.Disabled_4.Name = "Disabled"
+Vanish.Disabled_4.Parent = Vanish.HudFrame
+Vanish.Disabled_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Disabled_4.BackgroundTransparency = 1.000
+Vanish.Disabled_4.Position = UDim2.new(0.835502684, 0, 0.342105269, 0)
+Vanish.Disabled_4.Size = UDim2.new(0, 42, 0, 12)
+Vanish.Disabled_4.Image = "rbxassetid://3570695787"
+Vanish.Disabled_4.ImageColor3 = Color3.fromRGB(255, 0, 0)
+Vanish.Disabled_4.ScaleType = Enum.ScaleType.Slice
+Vanish.Disabled_4.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Disabled_4.SliceScale = 0.120
+
+Vanish.Frame_7.Name = "Frame"
+Vanish.Frame_7.Parent = Vanish.Disabled_4
+Vanish.Frame_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Frame_7.BackgroundTransparency = 1.000
+Vanish.Frame_7.Position = UDim2.new(-0.166666672, 0, -0.5, 0)
+Vanish.Frame_7.Size = UDim2.new(0, 22, 0, 23)
+Vanish.Frame_7.Image = "rbxassetid://3570695787"
+Vanish.Frame_7.ScaleType = Enum.ScaleType.Slice
+Vanish.Frame_7.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Frame_7.SliceScale = 0.120
+
+Vanish.UIAspectRatioConstraint_33.Parent = Vanish.Frame_7
+Vanish.UIAspectRatioConstraint_33.AspectRatio = 0.957
+
+Vanish.UIAspectRatioConstraint_34.Parent = Vanish.Disabled_4
+Vanish.UIAspectRatioConstraint_34.AspectRatio = 3.500
+
+Vanish.Active_4.Name = "Active"
+Vanish.Active_4.Parent = Vanish.HudFrame
+Vanish.Active_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Active_4.BackgroundTransparency = 1.000
+Vanish.Active_4.Position = UDim2.new(0.835502684, 0, 0.342105269, 0)
+Vanish.Active_4.Size = UDim2.new(0, 42, 0, 12)
+Vanish.Active_4.Visible = false
+Vanish.Active_4.Image = "rbxassetid://3570695787"
+Vanish.Active_4.ImageColor3 = Color3.fromRGB(0, 255, 0)
+Vanish.Active_4.ScaleType = Enum.ScaleType.Slice
+Vanish.Active_4.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Active_4.SliceScale = 0.120
+
+Vanish.Frame_8.Name = "Frame"
+Vanish.Frame_8.Parent = Vanish.Active_4
+Vanish.Frame_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Frame_8.BackgroundTransparency = 1.000
+Vanish.Frame_8.Position = UDim2.new(0.476190448, 0, -0.5, 0)
+Vanish.Frame_8.Size = UDim2.new(0, 22, 0, 23)
+Vanish.Frame_8.Image = "rbxassetid://3570695787"
+Vanish.Frame_8.ScaleType = Enum.ScaleType.Slice
+Vanish.Frame_8.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Frame_8.SliceScale = 0.120
+
+Vanish.UIAspectRatioConstraint_35.Parent = Vanish.Frame_8
+Vanish.UIAspectRatioConstraint_35.AspectRatio = 0.957
+
+Vanish.UIAspectRatioConstraint_36.Parent = Vanish.Active_4
+Vanish.UIAspectRatioConstraint_36.AspectRatio = 3.500
+
+Vanish.RemoveHudButton.Name = "RemoveHudButton"
+Vanish.RemoveHudButton.Parent = Vanish.HudFrame
+Vanish.RemoveHudButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.RemoveHudButton.BackgroundTransparency = 1.000
+Vanish.RemoveHudButton.Position = UDim2.new(0.817461491, 0, 0.184210524, 0)
+Vanish.RemoveHudButton.Size = UDim2.new(0, 48, 0, 23)
+Vanish.RemoveHudButton.Font = Enum.Font.SourceSans
+Vanish.RemoveHudButton.Text = ""
+Vanish.RemoveHudButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+Vanish.RemoveHudButton.TextSize = 14.000
+
+Vanish.UIAspectRatioConstraint_37.Parent = Vanish.RemoveHudButton
+Vanish.UIAspectRatioConstraint_37.AspectRatio = 2.087
+
+Vanish.UIAspectRatioConstraint_38.Parent = Vanish.HudFrame
+Vanish.UIAspectRatioConstraint_38.AspectRatio = 10.211
+
+Vanish.CamFrame.Name = "CamFrame"
+Vanish.CamFrame.Parent = Vanish.FarmingFrame
+Vanish.CamFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.CamFrame.BackgroundTransparency = 1.000
+Vanish.CamFrame.Position = UDim2.new(0.0140000004, 0, 0.340000004, 0)
+Vanish.CamFrame.Size = UDim2.new(0, 388, 0, 38)
+Vanish.CamFrame.Image = "rbxassetid://3570695787"
+Vanish.CamFrame.ImageColor3 = Color3.fromRGB(109, 109, 109)
+Vanish.CamFrame.ScaleType = Enum.ScaleType.Slice
+Vanish.CamFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.CamFrame.SliceScale = 0.120
+
+Vanish.TextLabel_7.Parent = Vanish.CamFrame
+Vanish.TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.TextLabel_7.BackgroundTransparency = 1.000
+Vanish.TextLabel_7.Position = UDim2.new(0.0231958758, 0, 0, 0)
+Vanish.TextLabel_7.Size = UDim2.new(0, 138, 0, 38)
+Vanish.TextLabel_7.Text = "Remove Camera"
+Vanish.TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.TextLabel_7.TextScaled = true
+Vanish.TextLabel_7.TextSize = 14.000
+Vanish.TextLabel_7.TextWrapped = true
+
+Vanish.UIAspectRatioConstraint_39.Parent = Vanish.TextLabel_7
+Vanish.UIAspectRatioConstraint_39.AspectRatio = 3.632
+
+Vanish.Disabled_5.Name = "Disabled"
+Vanish.Disabled_5.Parent = Vanish.CamFrame
+Vanish.Disabled_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Disabled_5.BackgroundTransparency = 1.000
+Vanish.Disabled_5.Position = UDim2.new(0.835502684, 0, 0.342105269, 0)
+Vanish.Disabled_5.Size = UDim2.new(0, 42, 0, 12)
+Vanish.Disabled_5.Image = "rbxassetid://3570695787"
+Vanish.Disabled_5.ImageColor3 = Color3.fromRGB(255, 0, 0)
+Vanish.Disabled_5.ScaleType = Enum.ScaleType.Slice
+Vanish.Disabled_5.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Disabled_5.SliceScale = 0.120
+
+Vanish.Frame_9.Name = "Frame"
+Vanish.Frame_9.Parent = Vanish.Disabled_5
+Vanish.Frame_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Frame_9.BackgroundTransparency = 1.000
+Vanish.Frame_9.Position = UDim2.new(-0.166666672, 0, -0.5, 0)
+Vanish.Frame_9.Size = UDim2.new(0, 22, 0, 23)
+Vanish.Frame_9.Image = "rbxassetid://3570695787"
+Vanish.Frame_9.ScaleType = Enum.ScaleType.Slice
+Vanish.Frame_9.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Frame_9.SliceScale = 0.120
+
+Vanish.UIAspectRatioConstraint_40.Parent = Vanish.Frame_9
+Vanish.UIAspectRatioConstraint_40.AspectRatio = 0.957
+
+Vanish.UIAspectRatioConstraint_41.Parent = Vanish.Disabled_5
+Vanish.UIAspectRatioConstraint_41.AspectRatio = 3.500
+
+Vanish.Active_5.Name = "Active"
+Vanish.Active_5.Parent = Vanish.CamFrame
+Vanish.Active_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Active_5.BackgroundTransparency = 1.000
+Vanish.Active_5.Position = UDim2.new(0.835502684, 0, 0.342105269, 0)
+Vanish.Active_5.Size = UDim2.new(0, 42, 0, 12)
+Vanish.Active_5.Visible = false
+Vanish.Active_5.Image = "rbxassetid://3570695787"
+Vanish.Active_5.ImageColor3 = Color3.fromRGB(0, 255, 0)
+Vanish.Active_5.ScaleType = Enum.ScaleType.Slice
+Vanish.Active_5.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Active_5.SliceScale = 0.120
+
+Vanish.Frame_10.Name = "Frame"
+Vanish.Frame_10.Parent = Vanish.Active_5
+Vanish.Frame_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Frame_10.BackgroundTransparency = 1.000
+Vanish.Frame_10.Position = UDim2.new(0.476190448, 0, -0.5, 0)
+Vanish.Frame_10.Size = UDim2.new(0, 22, 0, 23)
+Vanish.Frame_10.Image = "rbxassetid://3570695787"
+Vanish.Frame_10.ScaleType = Enum.ScaleType.Slice
+Vanish.Frame_10.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Frame_10.SliceScale = 0.120
+
+Vanish.UIAspectRatioConstraint_42.Parent = Vanish.Frame_10
+Vanish.UIAspectRatioConstraint_42.AspectRatio = 0.957
+
+Vanish.UIAspectRatioConstraint_43.Parent = Vanish.Active_5
+Vanish.UIAspectRatioConstraint_43.AspectRatio = 3.500
+
+Vanish.RemoveCamButton.Name = "RemoveCamButton"
+Vanish.RemoveCamButton.Parent = Vanish.CamFrame
+Vanish.RemoveCamButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.RemoveCamButton.BackgroundTransparency = 1.000
+Vanish.RemoveCamButton.Position = UDim2.new(0.817461491, 0, 0.184210524, 0)
+Vanish.RemoveCamButton.Size = UDim2.new(0, 48, 0, 23)
+Vanish.RemoveCamButton.Font = Enum.Font.SourceSans
+Vanish.RemoveCamButton.Text = ""
+Vanish.RemoveCamButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+Vanish.RemoveCamButton.TextSize = 14.000
+
+Vanish.UIAspectRatioConstraint_44.Parent = Vanish.RemoveCamButton
+Vanish.UIAspectRatioConstraint_44.AspectRatio = 2.087
+
+Vanish.UIAspectRatioConstraint_45.Parent = Vanish.CamFrame
+Vanish.UIAspectRatioConstraint_45.AspectRatio = 10.211
+
+Vanish.LockFrame.Name = "LockFrame"
+Vanish.LockFrame.Parent = Vanish.FarmingFrame
+Vanish.LockFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.LockFrame.BackgroundTransparency = 1.000
+Vanish.LockFrame.Position = UDim2.new(0.0140000004, 0, 0.419999987, 0)
+Vanish.LockFrame.Size = UDim2.new(0, 388, 0, 38)
+Vanish.LockFrame.Image = "rbxassetid://3570695787"
+Vanish.LockFrame.ImageColor3 = Color3.fromRGB(109, 109, 109)
+Vanish.LockFrame.ScaleType = Enum.ScaleType.Slice
+Vanish.LockFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.LockFrame.SliceScale = 0.120
+
+Vanish.TextLabel_8.Parent = Vanish.LockFrame
+Vanish.TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.TextLabel_8.BackgroundTransparency = 1.000
+Vanish.TextLabel_8.Position = UDim2.new(0.0231958758, 0, 0, 0)
+Vanish.TextLabel_8.Size = UDim2.new(0, 103, 0, 38)
+Vanish.TextLabel_8.Text = "Lock Player"
+Vanish.TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.TextLabel_8.TextScaled = true
+Vanish.TextLabel_8.TextSize = 14.000
+Vanish.TextLabel_8.TextWrapped = true
+
+Vanish.UIAspectRatioConstraint_46.Parent = Vanish.TextLabel_8
+Vanish.UIAspectRatioConstraint_46.AspectRatio = 2.711
+
+Vanish.Disabled_6.Name = "Disabled"
+Vanish.Disabled_6.Parent = Vanish.LockFrame
+Vanish.Disabled_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Disabled_6.BackgroundTransparency = 1.000
+Vanish.Disabled_6.Position = UDim2.new(0.835502684, 0, 0.342105269, 0)
+Vanish.Disabled_6.Size = UDim2.new(0, 42, 0, 12)
+Vanish.Disabled_6.Image = "rbxassetid://3570695787"
+Vanish.Disabled_6.ImageColor3 = Color3.fromRGB(255, 0, 0)
+Vanish.Disabled_6.ScaleType = Enum.ScaleType.Slice
+Vanish.Disabled_6.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Disabled_6.SliceScale = 0.120
+
+Vanish.Frame_11.Name = "Frame"
+Vanish.Frame_11.Parent = Vanish.Disabled_6
+Vanish.Frame_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Frame_11.BackgroundTransparency = 1.000
+Vanish.Frame_11.Position = UDim2.new(-0.166666672, 0, -0.5, 0)
+Vanish.Frame_11.Size = UDim2.new(0, 22, 0, 23)
+Vanish.Frame_11.Image = "rbxassetid://3570695787"
+Vanish.Frame_11.ScaleType = Enum.ScaleType.Slice
+Vanish.Frame_11.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Frame_11.SliceScale = 0.120
+
+Vanish.UIAspectRatioConstraint_47.Parent = Vanish.Frame_11
+Vanish.UIAspectRatioConstraint_47.AspectRatio = 0.957
+
+Vanish.UIAspectRatioConstraint_48.Parent = Vanish.Disabled_6
+Vanish.UIAspectRatioConstraint_48.AspectRatio = 3.500
+
+Vanish.Active_6.Name = "Active"
+Vanish.Active_6.Parent = Vanish.LockFrame
+Vanish.Active_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Active_6.BackgroundTransparency = 1.000
+Vanish.Active_6.Position = UDim2.new(0.835502684, 0, 0.342105269, 0)
+Vanish.Active_6.Size = UDim2.new(0, 42, 0, 12)
+Vanish.Active_6.Visible = false
+Vanish.Active_6.Image = "rbxassetid://3570695787"
+Vanish.Active_6.ImageColor3 = Color3.fromRGB(0, 255, 0)
+Vanish.Active_6.ScaleType = Enum.ScaleType.Slice
+Vanish.Active_6.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Active_6.SliceScale = 0.120
+
+Vanish.Frame_12.Name = "Frame"
+Vanish.Frame_12.Parent = Vanish.Active_6
+Vanish.Frame_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Frame_12.BackgroundTransparency = 1.000
+Vanish.Frame_12.Position = UDim2.new(0.476190448, 0, -0.5, 0)
+Vanish.Frame_12.Size = UDim2.new(0, 22, 0, 23)
+Vanish.Frame_12.Image = "rbxassetid://3570695787"
+Vanish.Frame_12.ScaleType = Enum.ScaleType.Slice
+Vanish.Frame_12.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Frame_12.SliceScale = 0.120
+
+Vanish.UIAspectRatioConstraint_49.Parent = Vanish.Frame_12
+Vanish.UIAspectRatioConstraint_49.AspectRatio = 0.957
+
+Vanish.UIAspectRatioConstraint_50.Parent = Vanish.Active_6
+Vanish.UIAspectRatioConstraint_50.AspectRatio = 3.500
+
+Vanish.LockPlayerButton.Name = "LockPlayerButton"
+Vanish.LockPlayerButton.Parent = Vanish.LockFrame
+Vanish.LockPlayerButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.LockPlayerButton.BackgroundTransparency = 1.000
+Vanish.LockPlayerButton.Position = UDim2.new(0.817461491, 0, 0.184210524, 0)
+Vanish.LockPlayerButton.Size = UDim2.new(0, 48, 0, 23)
+Vanish.LockPlayerButton.Font = Enum.Font.SourceSans
+Vanish.LockPlayerButton.Text = ""
+Vanish.LockPlayerButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+Vanish.LockPlayerButton.TextSize = 14.000
+
+Vanish.UIAspectRatioConstraint_51.Parent = Vanish.LockPlayerButton
+Vanish.UIAspectRatioConstraint_51.AspectRatio = 2.087
+
+Vanish.UIAspectRatioConstraint_52.Parent = Vanish.LockFrame
+Vanish.UIAspectRatioConstraint_52.AspectRatio = 10.211
+
+Vanish.TpFrame.Name = "TpFrame"
+Vanish.TpFrame.Parent = Vanish.FarmingFrame
+Vanish.TpFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.TpFrame.BackgroundTransparency = 1.000
+Vanish.TpFrame.Position = UDim2.new(0.0140000004, 0, 0.5, 0)
+Vanish.TpFrame.Size = UDim2.new(0, 388, 0, 38)
+Vanish.TpFrame.Image = "rbxassetid://3570695787"
+Vanish.TpFrame.ImageColor3 = Color3.fromRGB(109, 109, 109)
+Vanish.TpFrame.ScaleType = Enum.ScaleType.Slice
+Vanish.TpFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.TpFrame.SliceScale = 0.120
+
+Vanish.TptoRumbleButton.Name = "TptoRumbleButton"
+Vanish.TptoRumbleButton.Parent = Vanish.TpFrame
+Vanish.TptoRumbleButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.TptoRumbleButton.BackgroundTransparency = 1.000
+Vanish.TptoRumbleButton.Position = UDim2.new(0.000453673681, 0, 0.055789344, 0)
+Vanish.TptoRumbleButton.Size = UDim2.new(0, 387, 0, 35)
+Vanish.TptoRumbleButton.Text = "Tp to Rumble"
+Vanish.TptoRumbleButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.TptoRumbleButton.TextScaled = true
+Vanish.TptoRumbleButton.TextSize = 14.000
+Vanish.TptoRumbleButton.TextWrapped = true
+
+Vanish.UIAspectRatioConstraint_53.Parent = Vanish.TptoRumbleButton
+Vanish.UIAspectRatioConstraint_53.AspectRatio = 11.057
+
+Vanish.UIAspectRatioConstraint_54.Parent = Vanish.TpFrame
+Vanish.UIAspectRatioConstraint_54.AspectRatio = 10.211
+
+Vanish.UIAspectRatioConstraint_55.Parent = Vanish.FarmingFrame
+Vanish.UIAspectRatioConstraint_55.AspectRatio = 1.460
+
+Vanish.DroppingFrame.Name = "DroppingFrame"
+Vanish.DroppingFrame.Parent = Vanish.CoreFrame
+Vanish.DroppingFrame.Active = true
+Vanish.DroppingFrame.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Vanish.DroppingFrame.BorderColor3 = Color3.fromRGB(138, 138, 138)
+Vanish.DroppingFrame.Position = UDim2.new(0.224999994, 0, 0.108999997, 0)
+Vanish.DroppingFrame.Size = UDim2.new(0, 416, 0, 285)
+Vanish.DroppingFrame.Visible = false
+
+Vanish.PlayerToDropFrame.Name = "PlayerToDropFrame"
+Vanish.PlayerToDropFrame.Parent = Vanish.DroppingFrame
+Vanish.PlayerToDropFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.PlayerToDropFrame.BackgroundTransparency = 1.000
+Vanish.PlayerToDropFrame.Position = UDim2.new(0.0144230779, 0, 0.0204580221, 0)
+Vanish.PlayerToDropFrame.Size = UDim2.new(0, 388, 0, 38)
+Vanish.PlayerToDropFrame.Image = "rbxassetid://3570695787"
+Vanish.PlayerToDropFrame.ImageColor3 = Color3.fromRGB(109, 109, 109)
+Vanish.PlayerToDropFrame.ScaleType = Enum.ScaleType.Slice
+Vanish.PlayerToDropFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.PlayerToDropFrame.SliceScale = 0.120
+
+Vanish.PlayerToDrop.Name = "PlayerToDrop"
+Vanish.PlayerToDrop.Parent = Vanish.PlayerToDropFrame
+Vanish.PlayerToDrop.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.PlayerToDrop.BackgroundTransparency = 1.000
+Vanish.PlayerToDrop.Size = UDim2.new(0, 388, 0, 38)
+Vanish.PlayerToDrop.Text = "Player"
+Vanish.PlayerToDrop.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.PlayerToDrop.TextScaled = true
+Vanish.PlayerToDrop.TextSize = 14.000
+Vanish.PlayerToDrop.TextWrapped = true
+
+Vanish.UIAspectRatioConstraint_56.Parent = Vanish.PlayerToDrop
+Vanish.UIAspectRatioConstraint_56.AspectRatio = 10.211
+
+Vanish.UIAspectRatioConstraint_57.Parent = Vanish.PlayerToDropFrame
+Vanish.UIAspectRatioConstraint_57.AspectRatio = 10.211
+
+Vanish.FollowFrame.Name = "FollowFrame"
+Vanish.FollowFrame.Parent = Vanish.DroppingFrame
+Vanish.FollowFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.FollowFrame.BackgroundTransparency = 1.000
+Vanish.FollowFrame.Position = UDim2.new(0.0140000004, 0, 0.100000001, 0)
+Vanish.FollowFrame.Size = UDim2.new(0, 388, 0, 38)
+Vanish.FollowFrame.Image = "rbxassetid://3570695787"
+Vanish.FollowFrame.ImageColor3 = Color3.fromRGB(109, 109, 109)
+Vanish.FollowFrame.ScaleType = Enum.ScaleType.Slice
+Vanish.FollowFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.FollowFrame.SliceScale = 0.120
+
+Vanish.TextLabel_9.Parent = Vanish.FollowFrame
+Vanish.TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.TextLabel_9.BackgroundTransparency = 1.000
+Vanish.TextLabel_9.Position = UDim2.new(0.0231958758, 0, 0, 0)
+Vanish.TextLabel_9.Size = UDim2.new(0, 111, 0, 38)
+Vanish.TextLabel_9.Text = "Follow Player"
+Vanish.TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.TextLabel_9.TextScaled = true
+Vanish.TextLabel_9.TextSize = 14.000
+Vanish.TextLabel_9.TextWrapped = true
+
+Vanish.UIAspectRatioConstraint_58.Parent = Vanish.TextLabel_9
+Vanish.UIAspectRatioConstraint_58.AspectRatio = 2.921
+
+Vanish.Disabled_7.Name = "Disabled"
+Vanish.Disabled_7.Parent = Vanish.FollowFrame
+Vanish.Disabled_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Disabled_7.BackgroundTransparency = 1.000
+Vanish.Disabled_7.Position = UDim2.new(0.835502684, 0, 0.342105269, 0)
+Vanish.Disabled_7.Size = UDim2.new(0, 42, 0, 12)
+Vanish.Disabled_7.Image = "rbxassetid://3570695787"
+Vanish.Disabled_7.ImageColor3 = Color3.fromRGB(255, 0, 0)
+Vanish.Disabled_7.ScaleType = Enum.ScaleType.Slice
+Vanish.Disabled_7.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Disabled_7.SliceScale = 0.120
+
+Vanish.Frame_13.Name = "Frame"
+Vanish.Frame_13.Parent = Vanish.Disabled_7
+Vanish.Frame_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Frame_13.BackgroundTransparency = 1.000
+Vanish.Frame_13.Position = UDim2.new(-0.166666672, 0, -0.5, 0)
+Vanish.Frame_13.Size = UDim2.new(0, 22, 0, 23)
+Vanish.Frame_13.Image = "rbxassetid://3570695787"
+Vanish.Frame_13.ScaleType = Enum.ScaleType.Slice
+Vanish.Frame_13.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Frame_13.SliceScale = 0.120
+
+Vanish.UIAspectRatioConstraint_59.Parent = Vanish.Frame_13
+Vanish.UIAspectRatioConstraint_59.AspectRatio = 0.957
+
+Vanish.UIAspectRatioConstraint_60.Parent = Vanish.Disabled_7
+Vanish.UIAspectRatioConstraint_60.AspectRatio = 3.500
+
+Vanish.Active_7.Name = "Active"
+Vanish.Active_7.Parent = Vanish.FollowFrame
+Vanish.Active_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Active_7.BackgroundTransparency = 1.000
+Vanish.Active_7.Position = UDim2.new(0.835502684, 0, 0.342105269, 0)
+Vanish.Active_7.Size = UDim2.new(0, 42, 0, 12)
+Vanish.Active_7.Visible = false
+Vanish.Active_7.Image = "rbxassetid://3570695787"
+Vanish.Active_7.ImageColor3 = Color3.fromRGB(0, 255, 0)
+Vanish.Active_7.ScaleType = Enum.ScaleType.Slice
+Vanish.Active_7.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Active_7.SliceScale = 0.120
+
+Vanish.Frame_14.Name = "Frame"
+Vanish.Frame_14.Parent = Vanish.Active_7
+Vanish.Frame_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Frame_14.BackgroundTransparency = 1.000
+Vanish.Frame_14.Position = UDim2.new(0.476190448, 0, -0.5, 0)
+Vanish.Frame_14.Size = UDim2.new(0, 22, 0, 23)
+Vanish.Frame_14.Image = "rbxassetid://3570695787"
+Vanish.Frame_14.ScaleType = Enum.ScaleType.Slice
+Vanish.Frame_14.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Frame_14.SliceScale = 0.120
+
+Vanish.UIAspectRatioConstraint_61.Parent = Vanish.Frame_14
+Vanish.UIAspectRatioConstraint_61.AspectRatio = 0.957
+
+Vanish.UIAspectRatioConstraint_62.Parent = Vanish.Active_7
+Vanish.UIAspectRatioConstraint_62.AspectRatio = 3.500
+
+Vanish.FollowButton.Name = "FollowButton"
+Vanish.FollowButton.Parent = Vanish.FollowFrame
+Vanish.FollowButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.FollowButton.BackgroundTransparency = 1.000
+Vanish.FollowButton.Position = UDim2.new(0.817461491, 0, 0.184210524, 0)
+Vanish.FollowButton.Size = UDim2.new(0, 48, 0, 23)
+Vanish.FollowButton.Font = Enum.Font.SourceSans
+Vanish.FollowButton.Text = ""
+Vanish.FollowButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+Vanish.FollowButton.TextSize = 14.000
+
+Vanish.UIAspectRatioConstraint_63.Parent = Vanish.FollowButton
+Vanish.UIAspectRatioConstraint_63.AspectRatio = 2.087
+
+Vanish.UIAspectRatioConstraint_64.Parent = Vanish.FollowFrame
+Vanish.UIAspectRatioConstraint_64.AspectRatio = 10.211
+
+Vanish.EquipFrame.Name = "EquipFrame"
+Vanish.EquipFrame.Parent = Vanish.DroppingFrame
+Vanish.EquipFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.EquipFrame.BackgroundTransparency = 1.000
+Vanish.EquipFrame.Position = UDim2.new(0.0140000004, 0, 0.180000007, 0)
+Vanish.EquipFrame.Size = UDim2.new(0, 388, 0, 38)
+Vanish.EquipFrame.Image = "rbxassetid://3570695787"
+Vanish.EquipFrame.ImageColor3 = Color3.fromRGB(109, 109, 109)
+Vanish.EquipFrame.ScaleType = Enum.ScaleType.Slice
+Vanish.EquipFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.EquipFrame.SliceScale = 0.120
+
+Vanish.TextLabel_10.Parent = Vanish.EquipFrame
+Vanish.TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.TextLabel_10.BackgroundTransparency = 1.000
+Vanish.TextLabel_10.Position = UDim2.new(0.0231958758, 0, 0, 0)
+Vanish.TextLabel_10.Size = UDim2.new(0, 111, 0, 38)
+Vanish.TextLabel_10.Text = "Equip Tool"
+Vanish.TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.TextLabel_10.TextScaled = true
+Vanish.TextLabel_10.TextSize = 14.000
+Vanish.TextLabel_10.TextWrapped = true
+
+Vanish.UIAspectRatioConstraint_65.Parent = Vanish.TextLabel_10
+Vanish.UIAspectRatioConstraint_65.AspectRatio = 2.921
+
+Vanish.Disabled_8.Name = "Disabled"
+Vanish.Disabled_8.Parent = Vanish.EquipFrame
+Vanish.Disabled_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Disabled_8.BackgroundTransparency = 1.000
+Vanish.Disabled_8.Position = UDim2.new(0.835502684, 0, 0.342105269, 0)
+Vanish.Disabled_8.Size = UDim2.new(0, 42, 0, 12)
+Vanish.Disabled_8.Image = "rbxassetid://3570695787"
+Vanish.Disabled_8.ImageColor3 = Color3.fromRGB(255, 0, 0)
+Vanish.Disabled_8.ScaleType = Enum.ScaleType.Slice
+Vanish.Disabled_8.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Disabled_8.SliceScale = 0.120
+
+Vanish.Frame_15.Name = "Frame"
+Vanish.Frame_15.Parent = Vanish.Disabled_8
+Vanish.Frame_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Frame_15.BackgroundTransparency = 1.000
+Vanish.Frame_15.Position = UDim2.new(-0.166666672, 0, -0.5, 0)
+Vanish.Frame_15.Size = UDim2.new(0, 22, 0, 23)
+Vanish.Frame_15.Image = "rbxassetid://3570695787"
+Vanish.Frame_15.ScaleType = Enum.ScaleType.Slice
+Vanish.Frame_15.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Frame_15.SliceScale = 0.120
+
+Vanish.UIAspectRatioConstraint_66.Parent = Vanish.Frame_15
+Vanish.UIAspectRatioConstraint_66.AspectRatio = 0.957
+
+Vanish.UIAspectRatioConstraint_67.Parent = Vanish.Disabled_8
+Vanish.UIAspectRatioConstraint_67.AspectRatio = 3.500
+
+Vanish.Active_8.Name = "Active"
+Vanish.Active_8.Parent = Vanish.EquipFrame
+Vanish.Active_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Active_8.BackgroundTransparency = 1.000
+Vanish.Active_8.Position = UDim2.new(0.835502684, 0, 0.342105269, 0)
+Vanish.Active_8.Size = UDim2.new(0, 42, 0, 12)
+Vanish.Active_8.Visible = false
+Vanish.Active_8.Image = "rbxassetid://3570695787"
+Vanish.Active_8.ImageColor3 = Color3.fromRGB(0, 255, 0)
+Vanish.Active_8.ScaleType = Enum.ScaleType.Slice
+Vanish.Active_8.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Active_8.SliceScale = 0.120
+
+Vanish.Frame_16.Name = "Frame"
+Vanish.Frame_16.Parent = Vanish.Active_8
+Vanish.Frame_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Frame_16.BackgroundTransparency = 1.000
+Vanish.Frame_16.Position = UDim2.new(0.476190448, 0, -0.5, 0)
+Vanish.Frame_16.Size = UDim2.new(0, 22, 0, 23)
+Vanish.Frame_16.Image = "rbxassetid://3570695787"
+Vanish.Frame_16.ScaleType = Enum.ScaleType.Slice
+Vanish.Frame_16.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Frame_16.SliceScale = 0.120
+
+Vanish.UIAspectRatioConstraint_68.Parent = Vanish.Frame_16
+Vanish.UIAspectRatioConstraint_68.AspectRatio = 0.957
+
+Vanish.UIAspectRatioConstraint_69.Parent = Vanish.Active_8
+Vanish.UIAspectRatioConstraint_69.AspectRatio = 3.500
+
+Vanish.EquipButton.Name = "EquipButton"
+Vanish.EquipButton.Parent = Vanish.EquipFrame
+Vanish.EquipButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.EquipButton.BackgroundTransparency = 1.000
+Vanish.EquipButton.Position = UDim2.new(0.817461491, 0, 0.184210524, 0)
+Vanish.EquipButton.Size = UDim2.new(0, 48, 0, 23)
+Vanish.EquipButton.Font = Enum.Font.SourceSans
+Vanish.EquipButton.Text = ""
+Vanish.EquipButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+Vanish.EquipButton.TextSize = 14.000
+
+Vanish.UIAspectRatioConstraint_70.Parent = Vanish.EquipButton
+Vanish.UIAspectRatioConstraint_70.AspectRatio = 2.087
+
+Vanish.UIAspectRatioConstraint_71.Parent = Vanish.EquipFrame
+Vanish.UIAspectRatioConstraint_71.AspectRatio = 10.211
+
+Vanish.GodFrame.Name = "GodFrame"
+Vanish.GodFrame.Parent = Vanish.DroppingFrame
+Vanish.GodFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.GodFrame.BackgroundTransparency = 1.000
+Vanish.GodFrame.Position = UDim2.new(0.0140000004, 0, 0.25999999, 0)
+Vanish.GodFrame.Size = UDim2.new(0, 388, 0, 38)
+Vanish.GodFrame.Image = "rbxassetid://3570695787"
+Vanish.GodFrame.ImageColor3 = Color3.fromRGB(109, 109, 109)
+Vanish.GodFrame.ScaleType = Enum.ScaleType.Slice
+Vanish.GodFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.GodFrame.SliceScale = 0.120
+
+Vanish.GodButton.Name = "GodButton"
+Vanish.GodButton.Parent = Vanish.GodFrame
+Vanish.GodButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.GodButton.BackgroundTransparency = 1.000
+Vanish.GodButton.Position = UDim2.new(0.000453673681, 0, 0, 0)
+Vanish.GodButton.Size = UDim2.new(0, 387, 0, 38)
+Vanish.GodButton.Text = "God"
+Vanish.GodButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.GodButton.TextScaled = true
+Vanish.GodButton.TextSize = 14.000
+Vanish.GodButton.TextWrapped = true
+
+Vanish.UIAspectRatioConstraint_72.Parent = Vanish.GodButton
+Vanish.UIAspectRatioConstraint_72.AspectRatio = 10.184
+
+Vanish.UIAspectRatioConstraint_73.Parent = Vanish.GodFrame
+Vanish.UIAspectRatioConstraint_73.AspectRatio = 10.211
+
+Vanish.ToolCountFrame.Name = "ToolCountFrame"
+Vanish.ToolCountFrame.Parent = Vanish.DroppingFrame
+Vanish.ToolCountFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.ToolCountFrame.BackgroundTransparency = 1.000
+Vanish.ToolCountFrame.Position = UDim2.new(0.0140000004, 0, 0.340000004, 0)
+Vanish.ToolCountFrame.Size = UDim2.new(0, 388, 0, 38)
+Vanish.ToolCountFrame.Visible = false
+Vanish.ToolCountFrame.Image = "rbxassetid://3570695787"
+Vanish.ToolCountFrame.ImageColor3 = Color3.fromRGB(109, 109, 109)
+Vanish.ToolCountFrame.ScaleType = Enum.ScaleType.Slice
+Vanish.ToolCountFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.ToolCountFrame.SliceScale = 0.120
+
+Vanish.ToolCount.Name = "ToolCount"
+Vanish.ToolCount.Parent = Vanish.ToolCountFrame
+Vanish.ToolCount.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.ToolCount.BackgroundTransparency = 1.000
+Vanish.ToolCount.Size = UDim2.new(0, 387, 0, 38)
+Vanish.ToolCount.Text = "Tools: 0"
+Vanish.ToolCount.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.ToolCount.TextScaled = true
+Vanish.ToolCount.TextSize = 14.000
+Vanish.ToolCount.TextWrapped = true
+
+Vanish.UIAspectRatioConstraint_74.Parent = Vanish.ToolCount
+Vanish.UIAspectRatioConstraint_74.AspectRatio = 10.184
+
+Vanish.UIAspectRatioConstraint_75.Parent = Vanish.ToolCountFrame
+Vanish.UIAspectRatioConstraint_75.AspectRatio = 10.211
+
+Vanish.ToolCountToggleFrame.Name = "ToolCountToggleFrame"
+Vanish.ToolCountToggleFrame.Parent = Vanish.DroppingFrame
+Vanish.ToolCountToggleFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.ToolCountToggleFrame.BackgroundTransparency = 1.000
+Vanish.ToolCountToggleFrame.Position = UDim2.new(0.0140000004, 0, 0.419999987, 0)
+Vanish.ToolCountToggleFrame.Size = UDim2.new(0, 388, 0, 38)
+Vanish.ToolCountToggleFrame.Visible = false
+Vanish.ToolCountToggleFrame.Image = "rbxassetid://3570695787"
+Vanish.ToolCountToggleFrame.ImageColor3 = Color3.fromRGB(109, 109, 109)
+Vanish.ToolCountToggleFrame.ScaleType = Enum.ScaleType.Slice
+Vanish.ToolCountToggleFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.ToolCountToggleFrame.SliceScale = 0.120
+
+Vanish.TextLabel_11.Parent = Vanish.ToolCountToggleFrame
+Vanish.TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.TextLabel_11.BackgroundTransparency = 1.000
+Vanish.TextLabel_11.Position = UDim2.new(0.0231958758, 0, 0, 0)
+Vanish.TextLabel_11.Size = UDim2.new(0, 111, 0, 38)
+Vanish.TextLabel_11.Text = "Count Tools"
+Vanish.TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.TextLabel_11.TextScaled = true
+Vanish.TextLabel_11.TextSize = 14.000
+Vanish.TextLabel_11.TextWrapped = true
+
+Vanish.UIAspectRatioConstraint_76.Parent = Vanish.TextLabel_11
+Vanish.UIAspectRatioConstraint_76.AspectRatio = 2.921
+
+Vanish.Disabled_9.Name = "Disabled"
+Vanish.Disabled_9.Parent = Vanish.ToolCountToggleFrame
+Vanish.Disabled_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Disabled_9.BackgroundTransparency = 1.000
+Vanish.Disabled_9.Position = UDim2.new(0.835502684, 0, 0.342105269, 0)
+Vanish.Disabled_9.Size = UDim2.new(0, 42, 0, 12)
+Vanish.Disabled_9.Image = "rbxassetid://3570695787"
+Vanish.Disabled_9.ImageColor3 = Color3.fromRGB(255, 0, 0)
+Vanish.Disabled_9.ScaleType = Enum.ScaleType.Slice
+Vanish.Disabled_9.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Disabled_9.SliceScale = 0.120
+
+Vanish.Frame_17.Name = "Frame"
+Vanish.Frame_17.Parent = Vanish.Disabled_9
+Vanish.Frame_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Frame_17.BackgroundTransparency = 1.000
+Vanish.Frame_17.Position = UDim2.new(-0.166666672, 0, -0.5, 0)
+Vanish.Frame_17.Size = UDim2.new(0, 22, 0, 23)
+Vanish.Frame_17.Image = "rbxassetid://3570695787"
+Vanish.Frame_17.ScaleType = Enum.ScaleType.Slice
+Vanish.Frame_17.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Frame_17.SliceScale = 0.120
+
+Vanish.UIAspectRatioConstraint_77.Parent = Vanish.Frame_17
+Vanish.UIAspectRatioConstraint_77.AspectRatio = 0.957
+
+Vanish.UIAspectRatioConstraint_78.Parent = Vanish.Disabled_9
+Vanish.UIAspectRatioConstraint_78.AspectRatio = 3.500
+
+Vanish.Active_9.Name = "Active"
+Vanish.Active_9.Parent = Vanish.ToolCountToggleFrame
+Vanish.Active_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Active_9.BackgroundTransparency = 1.000
+Vanish.Active_9.Position = UDim2.new(0.835502684, 0, 0.342105269, 0)
+Vanish.Active_9.Size = UDim2.new(0, 42, 0, 12)
+Vanish.Active_9.Visible = false
+Vanish.Active_9.Image = "rbxassetid://3570695787"
+Vanish.Active_9.ImageColor3 = Color3.fromRGB(0, 255, 0)
+Vanish.Active_9.ScaleType = Enum.ScaleType.Slice
+Vanish.Active_9.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Active_9.SliceScale = 0.120
+
+Vanish.Frame_18.Name = "Frame"
+Vanish.Frame_18.Parent = Vanish.Active_9
+Vanish.Frame_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Frame_18.BackgroundTransparency = 1.000
+Vanish.Frame_18.Position = UDim2.new(0.476190448, 0, -0.5, 0)
+Vanish.Frame_18.Size = UDim2.new(0, 22, 0, 23)
+Vanish.Frame_18.Image = "rbxassetid://3570695787"
+Vanish.Frame_18.ScaleType = Enum.ScaleType.Slice
+Vanish.Frame_18.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Frame_18.SliceScale = 0.120
+
+Vanish.UIAspectRatioConstraint_79.Parent = Vanish.Frame_18
+Vanish.UIAspectRatioConstraint_79.AspectRatio = 0.957
+
+Vanish.UIAspectRatioConstraint_80.Parent = Vanish.Active_9
+Vanish.UIAspectRatioConstraint_80.AspectRatio = 3.500
+
+Vanish.ToolCountButton.Name = "ToolCountButton"
+Vanish.ToolCountButton.Parent = Vanish.ToolCountToggleFrame
+Vanish.ToolCountButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.ToolCountButton.BackgroundTransparency = 1.000
+Vanish.ToolCountButton.Position = UDim2.new(0.817461491, 0, 0.184210524, 0)
+Vanish.ToolCountButton.Size = UDim2.new(0, 48, 0, 23)
+Vanish.ToolCountButton.Font = Enum.Font.SourceSans
+Vanish.ToolCountButton.Text = ""
+Vanish.ToolCountButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+Vanish.ToolCountButton.TextSize = 14.000
+
+Vanish.UIAspectRatioConstraint_81.Parent = Vanish.ToolCountButton
+Vanish.UIAspectRatioConstraint_81.AspectRatio = 2.087
+
+Vanish.UIAspectRatioConstraint_82.Parent = Vanish.ToolCountToggleFrame
+Vanish.UIAspectRatioConstraint_82.AspectRatio = 10.211
+
+Vanish.UIAspectRatioConstraint_83.Parent = Vanish.DroppingFrame
+Vanish.UIAspectRatioConstraint_83.AspectRatio = 1.460
+
+Vanish.MiscFrame.Name = "MiscFrame"
+Vanish.MiscFrame.Parent = Vanish.CoreFrame
+Vanish.MiscFrame.Active = true
+Vanish.MiscFrame.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Vanish.MiscFrame.BorderColor3 = Color3.fromRGB(138, 138, 138)
+Vanish.MiscFrame.Position = UDim2.new(0.224999994, 0, 0.108999997, 0)
+Vanish.MiscFrame.Size = UDim2.new(0, 416, 0, 285)
+Vanish.MiscFrame.Visible = false
+
+Vanish.SmallFrame.Name = "SmallFrame"
+Vanish.SmallFrame.Parent = Vanish.MiscFrame
+Vanish.SmallFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.SmallFrame.BackgroundTransparency = 1.000
+Vanish.SmallFrame.Position = UDim2.new(0.0144230779, 0, 0.0204580221, 0)
+Vanish.SmallFrame.Size = UDim2.new(0, 388, 0, 38)
+Vanish.SmallFrame.Image = "rbxassetid://3570695787"
+Vanish.SmallFrame.ImageColor3 = Color3.fromRGB(109, 109, 109)
+Vanish.SmallFrame.ScaleType = Enum.ScaleType.Slice
+Vanish.SmallFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.SmallFrame.SliceScale = 0.120
+
+Vanish.Small.Name = "Small"
+Vanish.Small.Parent = Vanish.SmallFrame
+Vanish.Small.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Small.BackgroundTransparency = 1.000
+Vanish.Small.Size = UDim2.new(0, 388, 0, 38)
+Vanish.Small.Text = "Become Small"
+Vanish.Small.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Small.TextScaled = true
+Vanish.Small.TextSize = 14.000
+Vanish.Small.TextWrapped = true
+
+Vanish.UIAspectRatioConstraint_84.Parent = Vanish.Small
+Vanish.UIAspectRatioConstraint_84.AspectRatio = 10.211
+
+Vanish.UIAspectRatioConstraint_85.Parent = Vanish.SmallFrame
+Vanish.UIAspectRatioConstraint_85.AspectRatio = 10.211
+
+Vanish.GiveGlovesFrame.Name = "GiveGlovesFrame"
+Vanish.GiveGlovesFrame.Parent = Vanish.MiscFrame
+Vanish.GiveGlovesFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.GiveGlovesFrame.BackgroundTransparency = 1.000
+Vanish.GiveGlovesFrame.Position = UDim2.new(0.0140000004, 0, 0.100000001, 0)
+Vanish.GiveGlovesFrame.Size = UDim2.new(0, 388, 0, 38)
+Vanish.GiveGlovesFrame.Image = "rbxassetid://3570695787"
+Vanish.GiveGlovesFrame.ImageColor3 = Color3.fromRGB(109, 109, 109)
+Vanish.GiveGlovesFrame.ScaleType = Enum.ScaleType.Slice
+Vanish.GiveGlovesFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.GiveGlovesFrame.SliceScale = 0.120
+
+Vanish.GiveGloves.Name = "GiveGloves"
+Vanish.GiveGloves.Parent = Vanish.GiveGlovesFrame
+Vanish.GiveGloves.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.GiveGloves.BackgroundTransparency = 1.000
+Vanish.GiveGloves.Size = UDim2.new(0, 388, 0, 38)
+Vanish.GiveGloves.Text = "Give All Gloves"
+Vanish.GiveGloves.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.GiveGloves.TextScaled = true
+Vanish.GiveGloves.TextSize = 14.000
+Vanish.GiveGloves.TextWrapped = true
+
+Vanish.UIAspectRatioConstraint_86.Parent = Vanish.GiveGloves
+Vanish.UIAspectRatioConstraint_86.AspectRatio = 10.211
+
+Vanish.UIAspectRatioConstraint_87.Parent = Vanish.GiveGlovesFrame
+Vanish.UIAspectRatioConstraint_87.AspectRatio = 10.211
+
+Vanish.RainbowGlovesFrame.Name = "RainbowGlovesFrame"
+Vanish.RainbowGlovesFrame.Parent = Vanish.MiscFrame
+Vanish.RainbowGlovesFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.RainbowGlovesFrame.BackgroundTransparency = 1.000
+Vanish.RainbowGlovesFrame.Position = UDim2.new(0.0140000004, 0, 0.180000007, 0)
+Vanish.RainbowGlovesFrame.Size = UDim2.new(0, 388, 0, 38)
+Vanish.RainbowGlovesFrame.Image = "rbxassetid://3570695787"
+Vanish.RainbowGlovesFrame.ImageColor3 = Color3.fromRGB(109, 109, 109)
+Vanish.RainbowGlovesFrame.ScaleType = Enum.ScaleType.Slice
+Vanish.RainbowGlovesFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.RainbowGlovesFrame.SliceScale = 0.120
+
+Vanish.TextLabel_12.Parent = Vanish.RainbowGlovesFrame
+Vanish.TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.TextLabel_12.BackgroundTransparency = 1.000
+Vanish.TextLabel_12.Position = UDim2.new(0.0231958758, 0, 0, 0)
+Vanish.TextLabel_12.Size = UDim2.new(0, 134, 0, 38)
+Vanish.TextLabel_12.Text = "Rainbow Gloves"
+Vanish.TextLabel_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.TextLabel_12.TextScaled = true
+Vanish.TextLabel_12.TextSize = 14.000
+Vanish.TextLabel_12.TextWrapped = true
+
+Vanish.UIAspectRatioConstraint_88.Parent = Vanish.TextLabel_12
+Vanish.UIAspectRatioConstraint_88.AspectRatio = 3.526
+
+Vanish.Disabled_10.Name = "Disabled"
+Vanish.Disabled_10.Parent = Vanish.RainbowGlovesFrame
+Vanish.Disabled_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Disabled_10.BackgroundTransparency = 1.000
+Vanish.Disabled_10.Position = UDim2.new(0.835502684, 0, 0.342105269, 0)
+Vanish.Disabled_10.Size = UDim2.new(0, 42, 0, 12)
+Vanish.Disabled_10.Image = "rbxassetid://3570695787"
+Vanish.Disabled_10.ImageColor3 = Color3.fromRGB(255, 0, 0)
+Vanish.Disabled_10.ScaleType = Enum.ScaleType.Slice
+Vanish.Disabled_10.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Disabled_10.SliceScale = 0.120
+
+Vanish.Frame_19.Name = "Frame"
+Vanish.Frame_19.Parent = Vanish.Disabled_10
+Vanish.Frame_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Frame_19.BackgroundTransparency = 1.000
+Vanish.Frame_19.Position = UDim2.new(-0.166666672, 0, -0.5, 0)
+Vanish.Frame_19.Size = UDim2.new(0, 22, 0, 23)
+Vanish.Frame_19.Image = "rbxassetid://3570695787"
+Vanish.Frame_19.ScaleType = Enum.ScaleType.Slice
+Vanish.Frame_19.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Frame_19.SliceScale = 0.120
+
+Vanish.UIAspectRatioConstraint_89.Parent = Vanish.Frame_19
+Vanish.UIAspectRatioConstraint_89.AspectRatio = 0.957
+
+Vanish.UIAspectRatioConstraint_90.Parent = Vanish.Disabled_10
+Vanish.UIAspectRatioConstraint_90.AspectRatio = 3.500
+
+Vanish.Active_10.Name = "Active"
+Vanish.Active_10.Parent = Vanish.RainbowGlovesFrame
+Vanish.Active_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Active_10.BackgroundTransparency = 1.000
+Vanish.Active_10.Position = UDim2.new(0.835502684, 0, 0.342105269, 0)
+Vanish.Active_10.Size = UDim2.new(0, 42, 0, 12)
+Vanish.Active_10.Visible = false
+Vanish.Active_10.Image = "rbxassetid://3570695787"
+Vanish.Active_10.ImageColor3 = Color3.fromRGB(0, 255, 0)
+Vanish.Active_10.ScaleType = Enum.ScaleType.Slice
+Vanish.Active_10.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Active_10.SliceScale = 0.120
+
+Vanish.Frame_20.Name = "Frame"
+Vanish.Frame_20.Parent = Vanish.Active_10
+Vanish.Frame_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Frame_20.BackgroundTransparency = 1.000
+Vanish.Frame_20.Position = UDim2.new(0.476190448, 0, -0.5, 0)
+Vanish.Frame_20.Size = UDim2.new(0, 22, 0, 23)
+Vanish.Frame_20.Image = "rbxassetid://3570695787"
+Vanish.Frame_20.ScaleType = Enum.ScaleType.Slice
+Vanish.Frame_20.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Frame_20.SliceScale = 0.120
+
+Vanish.UIAspectRatioConstraint_91.Parent = Vanish.Frame_20
+Vanish.UIAspectRatioConstraint_91.AspectRatio = 0.957
+
+Vanish.UIAspectRatioConstraint_92.Parent = Vanish.Active_10
+Vanish.UIAspectRatioConstraint_92.AspectRatio = 3.500
+
+Vanish.RaimbowGloves.Name = "RaimbowGloves"
+Vanish.RaimbowGloves.Parent = Vanish.RainbowGlovesFrame
+Vanish.RaimbowGloves.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.RaimbowGloves.BackgroundTransparency = 1.000
+Vanish.RaimbowGloves.Position = UDim2.new(0.817461491, 0, 0.184210524, 0)
+Vanish.RaimbowGloves.Size = UDim2.new(0, 48, 0, 23)
+Vanish.RaimbowGloves.Font = Enum.Font.SourceSans
+Vanish.RaimbowGloves.Text = ""
+Vanish.RaimbowGloves.TextColor3 = Color3.fromRGB(0, 0, 0)
+Vanish.RaimbowGloves.TextSize = 14.000
+
+Vanish.UIAspectRatioConstraint_93.Parent = Vanish.RaimbowGloves
+Vanish.UIAspectRatioConstraint_93.AspectRatio = 2.087
+
+Vanish.UIAspectRatioConstraint_94.Parent = Vanish.RainbowGlovesFrame
+Vanish.UIAspectRatioConstraint_94.AspectRatio = 10.211
+
+Vanish.AutoJoinFrame.Name = "AutoJoinFrame"
+Vanish.AutoJoinFrame.Parent = Vanish.MiscFrame
+Vanish.AutoJoinFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.AutoJoinFrame.BackgroundTransparency = 1.000
+Vanish.AutoJoinFrame.Position = UDim2.new(0.0140000004, 0, 0.25999999, 0)
+Vanish.AutoJoinFrame.Size = UDim2.new(0, 388, 0, 38)
+Vanish.AutoJoinFrame.Visible = false
+Vanish.AutoJoinFrame.Image = "rbxassetid://3570695787"
+Vanish.AutoJoinFrame.ImageColor3 = Color3.fromRGB(109, 109, 109)
+Vanish.AutoJoinFrame.ScaleType = Enum.ScaleType.Slice
+Vanish.AutoJoinFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.AutoJoinFrame.SliceScale = 0.120
+
+Vanish.TextLabel_13.Parent = Vanish.AutoJoinFrame
+Vanish.TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.TextLabel_13.BackgroundTransparency = 1.000
+Vanish.TextLabel_13.Position = UDim2.new(0.0231958758, 0, 0, 0)
+Vanish.TextLabel_13.Size = UDim2.new(0, 134, 0, 38)
+Vanish.TextLabel_13.Text = "Auto Join"
+Vanish.TextLabel_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.TextLabel_13.TextScaled = true
+Vanish.TextLabel_13.TextSize = 14.000
+Vanish.TextLabel_13.TextWrapped = true
+
+Vanish.UIAspectRatioConstraint_95.Parent = Vanish.TextLabel_13
+Vanish.UIAspectRatioConstraint_95.AspectRatio = 3.526
+
+Vanish.Disabled_11.Name = "Disabled"
+Vanish.Disabled_11.Parent = Vanish.AutoJoinFrame
+Vanish.Disabled_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Disabled_11.BackgroundTransparency = 1.000
+Vanish.Disabled_11.Position = UDim2.new(0.835502684, 0, 0.342105269, 0)
+Vanish.Disabled_11.Size = UDim2.new(0, 42, 0, 12)
+Vanish.Disabled_11.Image = "rbxassetid://3570695787"
+Vanish.Disabled_11.ImageColor3 = Color3.fromRGB(255, 0, 0)
+Vanish.Disabled_11.ScaleType = Enum.ScaleType.Slice
+Vanish.Disabled_11.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Disabled_11.SliceScale = 0.120
+
+Vanish.Frame_21.Name = "Frame"
+Vanish.Frame_21.Parent = Vanish.Disabled_11
+Vanish.Frame_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Frame_21.BackgroundTransparency = 1.000
+Vanish.Frame_21.Position = UDim2.new(-0.166666672, 0, -0.5, 0)
+Vanish.Frame_21.Size = UDim2.new(0, 22, 0, 23)
+Vanish.Frame_21.Image = "rbxassetid://3570695787"
+Vanish.Frame_21.ScaleType = Enum.ScaleType.Slice
+Vanish.Frame_21.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Frame_21.SliceScale = 0.120
+
+Vanish.UIAspectRatioConstraint_96.Parent = Vanish.Frame_21
+Vanish.UIAspectRatioConstraint_96.AspectRatio = 0.957
+
+Vanish.UIAspectRatioConstraint_97.Parent = Vanish.Disabled_11
+Vanish.UIAspectRatioConstraint_97.AspectRatio = 3.500
+
+Vanish.Active_11.Name = "Active"
+Vanish.Active_11.Parent = Vanish.AutoJoinFrame
+Vanish.Active_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Active_11.BackgroundTransparency = 1.000
+Vanish.Active_11.Position = UDim2.new(0.835502684, 0, 0.342105269, 0)
+Vanish.Active_11.Size = UDim2.new(0, 42, 0, 12)
+Vanish.Active_11.Visible = false
+Vanish.Active_11.Image = "rbxassetid://3570695787"
+Vanish.Active_11.ImageColor3 = Color3.fromRGB(0, 255, 0)
+Vanish.Active_11.ScaleType = Enum.ScaleType.Slice
+Vanish.Active_11.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Active_11.SliceScale = 0.120
+
+Vanish.Frame_22.Name = "Frame"
+Vanish.Frame_22.Parent = Vanish.Active_11
+Vanish.Frame_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Frame_22.BackgroundTransparency = 1.000
+Vanish.Frame_22.Position = UDim2.new(0.476190448, 0, -0.5, 0)
+Vanish.Frame_22.Size = UDim2.new(0, 22, 0, 23)
+Vanish.Frame_22.Image = "rbxassetid://3570695787"
+Vanish.Frame_22.ScaleType = Enum.ScaleType.Slice
+Vanish.Frame_22.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Frame_22.SliceScale = 0.120
+
+Vanish.UIAspectRatioConstraint_98.Parent = Vanish.Frame_22
+Vanish.UIAspectRatioConstraint_98.AspectRatio = 0.957
+
+Vanish.UIAspectRatioConstraint_99.Parent = Vanish.Active_11
+Vanish.UIAspectRatioConstraint_99.AspectRatio = 3.500
+
+Vanish.AutoJoin.Name = "AutoJoin"
+Vanish.AutoJoin.Parent = Vanish.AutoJoinFrame
+Vanish.AutoJoin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.AutoJoin.BackgroundTransparency = 1.000
+Vanish.AutoJoin.Position = UDim2.new(0.817461491, 0, 0.184210524, 0)
+Vanish.AutoJoin.Size = UDim2.new(0, 48, 0, 23)
+Vanish.AutoJoin.Font = Enum.Font.SourceSans
+Vanish.AutoJoin.Text = ""
+Vanish.AutoJoin.TextColor3 = Color3.fromRGB(0, 0, 0)
+Vanish.AutoJoin.TextSize = 14.000
+
+Vanish.UIAspectRatioConstraint_100.Parent = Vanish.AutoJoin
+Vanish.UIAspectRatioConstraint_100.AspectRatio = 2.087
+
+Vanish.UIAspectRatioConstraint_101.Parent = Vanish.AutoJoinFrame
+Vanish.UIAspectRatioConstraint_101.AspectRatio = 10.211
+
+Vanish.AutoResetFrame.Name = "AutoResetFrame"
+Vanish.AutoResetFrame.Parent = Vanish.MiscFrame
+Vanish.AutoResetFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.AutoResetFrame.BackgroundTransparency = 1.000
+Vanish.AutoResetFrame.Position = UDim2.new(0.0140000004, 0, 0.340000004, 0)
+Vanish.AutoResetFrame.Size = UDim2.new(0, 388, 0, 38)
+Vanish.AutoResetFrame.Visible = false
+Vanish.AutoResetFrame.Image = "rbxassetid://3570695787"
+Vanish.AutoResetFrame.ImageColor3 = Color3.fromRGB(109, 109, 109)
+Vanish.AutoResetFrame.ScaleType = Enum.ScaleType.Slice
+Vanish.AutoResetFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.AutoResetFrame.SliceScale = 0.120
+
+Vanish.TextLabel_14.Parent = Vanish.AutoResetFrame
+Vanish.TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.TextLabel_14.BackgroundTransparency = 1.000
+Vanish.TextLabel_14.Position = UDim2.new(0.0231958758, 0, 0, 0)
+Vanish.TextLabel_14.Size = UDim2.new(0, 134, 0, 38)
+Vanish.TextLabel_14.Text = "Auto Reset"
+Vanish.TextLabel_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.TextLabel_14.TextScaled = true
+Vanish.TextLabel_14.TextSize = 14.000
+Vanish.TextLabel_14.TextWrapped = true
+
+Vanish.UIAspectRatioConstraint_102.Parent = Vanish.TextLabel_14
+Vanish.UIAspectRatioConstraint_102.AspectRatio = 3.526
+
+Vanish.Disabled_12.Name = "Disabled"
+Vanish.Disabled_12.Parent = Vanish.AutoResetFrame
+Vanish.Disabled_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Disabled_12.BackgroundTransparency = 1.000
+Vanish.Disabled_12.Position = UDim2.new(0.835502684, 0, 0.342105269, 0)
+Vanish.Disabled_12.Size = UDim2.new(0, 42, 0, 12)
+Vanish.Disabled_12.Image = "rbxassetid://3570695787"
+Vanish.Disabled_12.ImageColor3 = Color3.fromRGB(255, 0, 0)
+Vanish.Disabled_12.ScaleType = Enum.ScaleType.Slice
+Vanish.Disabled_12.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Disabled_12.SliceScale = 0.120
+
+Vanish.Frame_23.Name = "Frame"
+Vanish.Frame_23.Parent = Vanish.Disabled_12
+Vanish.Frame_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Frame_23.BackgroundTransparency = 1.000
+Vanish.Frame_23.Position = UDim2.new(-0.166666672, 0, -0.5, 0)
+Vanish.Frame_23.Size = UDim2.new(0, 22, 0, 23)
+Vanish.Frame_23.Image = "rbxassetid://3570695787"
+Vanish.Frame_23.ScaleType = Enum.ScaleType.Slice
+Vanish.Frame_23.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Frame_23.SliceScale = 0.120
+
+Vanish.UIAspectRatioConstraint_103.Parent = Vanish.Frame_23
+Vanish.UIAspectRatioConstraint_103.AspectRatio = 0.957
+
+Vanish.UIAspectRatioConstraint_104.Parent = Vanish.Disabled_12
+Vanish.UIAspectRatioConstraint_104.AspectRatio = 3.500
+
+Vanish.Active_12.Name = "Active"
+Vanish.Active_12.Parent = Vanish.AutoResetFrame
+Vanish.Active_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Active_12.BackgroundTransparency = 1.000
+Vanish.Active_12.Position = UDim2.new(0.835502684, 0, 0.342105269, 0)
+Vanish.Active_12.Size = UDim2.new(0, 42, 0, 12)
+Vanish.Active_12.Visible = false
+Vanish.Active_12.Image = "rbxassetid://3570695787"
+Vanish.Active_12.ImageColor3 = Color3.fromRGB(0, 255, 0)
+Vanish.Active_12.ScaleType = Enum.ScaleType.Slice
+Vanish.Active_12.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Active_12.SliceScale = 0.120
+
+Vanish.Frame_24.Name = "Frame"
+Vanish.Frame_24.Parent = Vanish.Active_12
+Vanish.Frame_24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Frame_24.BackgroundTransparency = 1.000
+Vanish.Frame_24.Position = UDim2.new(0.476190448, 0, -0.5, 0)
+Vanish.Frame_24.Size = UDim2.new(0, 22, 0, 23)
+Vanish.Frame_24.Image = "rbxassetid://3570695787"
+Vanish.Frame_24.ScaleType = Enum.ScaleType.Slice
+Vanish.Frame_24.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Frame_24.SliceScale = 0.120
+
+Vanish.UIAspectRatioConstraint_105.Parent = Vanish.Frame_24
+Vanish.UIAspectRatioConstraint_105.AspectRatio = 0.957
+
+Vanish.UIAspectRatioConstraint_106.Parent = Vanish.Active_12
+Vanish.UIAspectRatioConstraint_106.AspectRatio = 3.500
+
+Vanish.AutoReset.Name = "AutoReset"
+Vanish.AutoReset.Parent = Vanish.AutoResetFrame
+Vanish.AutoReset.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.AutoReset.BackgroundTransparency = 1.000
+Vanish.AutoReset.Position = UDim2.new(0.817461491, 0, 0.184210524, 0)
+Vanish.AutoReset.Size = UDim2.new(0, 48, 0, 23)
+Vanish.AutoReset.Font = Enum.Font.SourceSans
+Vanish.AutoReset.Text = ""
+Vanish.AutoReset.TextColor3 = Color3.fromRGB(0, 0, 0)
+Vanish.AutoReset.TextSize = 14.000
+
+Vanish.UIAspectRatioConstraint_107.Parent = Vanish.AutoReset
+Vanish.UIAspectRatioConstraint_107.AspectRatio = 2.087
+
+Vanish.UIAspectRatioConstraint_108.Parent = Vanish.AutoResetFrame
+Vanish.UIAspectRatioConstraint_108.AspectRatio = 10.211
+
+Vanish.PlayerToKillFrame.Name = "PlayerToKillFrame"
+Vanish.PlayerToKillFrame.Parent = Vanish.MiscFrame
+Vanish.PlayerToKillFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.PlayerToKillFrame.BackgroundTransparency = 1.000
+Vanish.PlayerToKillFrame.Position = UDim2.new(0.0140000004, 0, 0.419999987, 0)
+Vanish.PlayerToKillFrame.Size = UDim2.new(0, 388, 0, 38)
+Vanish.PlayerToKillFrame.Visible = false
+Vanish.PlayerToKillFrame.Image = "rbxassetid://3570695787"
+Vanish.PlayerToKillFrame.ImageColor3 = Color3.fromRGB(109, 109, 109)
+Vanish.PlayerToKillFrame.ScaleType = Enum.ScaleType.Slice
+Vanish.PlayerToKillFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.PlayerToKillFrame.SliceScale = 0.120
+
+Vanish.PlayerToKill.Name = "PlayerToKill"
+Vanish.PlayerToKill.Parent = Vanish.PlayerToKillFrame
+Vanish.PlayerToKill.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.PlayerToKill.BackgroundTransparency = 1.000
+Vanish.PlayerToKill.Size = UDim2.new(0, 388, 0, 38)
+Vanish.PlayerToKill.Text = "Player"
+Vanish.PlayerToKill.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.PlayerToKill.TextScaled = true
+Vanish.PlayerToKill.TextSize = 14.000
+Vanish.PlayerToKill.TextWrapped = true
+
+Vanish.UIAspectRatioConstraint_109.Parent = Vanish.PlayerToKill
+Vanish.UIAspectRatioConstraint_109.AspectRatio = 10.211
+
+Vanish.UIAspectRatioConstraint_110.Parent = Vanish.PlayerToKillFrame
+Vanish.UIAspectRatioConstraint_110.AspectRatio = 10.211
+
+Vanish.PlayerToKillButtonFrame.Name = "PlayerToKillButtonFrame"
+Vanish.PlayerToKillButtonFrame.Parent = Vanish.MiscFrame
+Vanish.PlayerToKillButtonFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.PlayerToKillButtonFrame.BackgroundTransparency = 1.000
+Vanish.PlayerToKillButtonFrame.Position = UDim2.new(0.0140000004, 0, 0.5, 0)
+Vanish.PlayerToKillButtonFrame.Size = UDim2.new(0, 388, 0, 38)
+Vanish.PlayerToKillButtonFrame.Visible = false
+Vanish.PlayerToKillButtonFrame.Image = "rbxassetid://3570695787"
+Vanish.PlayerToKillButtonFrame.ImageColor3 = Color3.fromRGB(109, 109, 109)
+Vanish.PlayerToKillButtonFrame.ScaleType = Enum.ScaleType.Slice
+Vanish.PlayerToKillButtonFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.PlayerToKillButtonFrame.SliceScale = 0.120
+
+Vanish.KillPlayer.Name = "KillPlayer"
+Vanish.KillPlayer.Parent = Vanish.PlayerToKillButtonFrame
+Vanish.KillPlayer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.KillPlayer.BackgroundTransparency = 1.000
+Vanish.KillPlayer.Size = UDim2.new(0, 388, 0, 38)
+Vanish.KillPlayer.Text = "Loop Player"
+Vanish.KillPlayer.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.KillPlayer.TextScaled = true
+Vanish.KillPlayer.TextSize = 14.000
+Vanish.KillPlayer.TextWrapped = true
+
+Vanish.UIAspectRatioConstraint_111.Parent = Vanish.KillPlayer
+Vanish.UIAspectRatioConstraint_111.AspectRatio = 10.211
+
+Vanish.UIAspectRatioConstraint_112.Parent = Vanish.PlayerToKillButtonFrame
+Vanish.UIAspectRatioConstraint_112.AspectRatio = 10.211
+
+Vanish.UIAspectRatioConstraint_113.Parent = Vanish.MiscFrame
+Vanish.UIAspectRatioConstraint_113.AspectRatio = 1.460
+
+Vanish.InfoFrame.Name = "InfoFrame"
+Vanish.InfoFrame.Parent = Vanish.CoreFrame
+Vanish.InfoFrame.Active = true
+Vanish.InfoFrame.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Vanish.InfoFrame.BorderColor3 = Color3.fromRGB(138, 138, 138)
+Vanish.InfoFrame.Position = UDim2.new(0.224999994, 0, 0.108999997, 0)
+Vanish.InfoFrame.Size = UDim2.new(0, 416, 0, 285)
+Vanish.InfoFrame.Visible = false
+
+Vanish.StrenthGainedFrame.Name = "StrenthGainedFrame"
+Vanish.StrenthGainedFrame.Parent = Vanish.InfoFrame
+Vanish.StrenthGainedFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.StrenthGainedFrame.BackgroundTransparency = 1.000
+Vanish.StrenthGainedFrame.Position = UDim2.new(0.0144230779, 0, 0.0204580221, 0)
+Vanish.StrenthGainedFrame.Size = UDim2.new(0, 388, 0, 38)
+Vanish.StrenthGainedFrame.Image = "rbxassetid://3570695787"
+Vanish.StrenthGainedFrame.ImageColor3 = Color3.fromRGB(109, 109, 109)
+Vanish.StrenthGainedFrame.ScaleType = Enum.ScaleType.Slice
+Vanish.StrenthGainedFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.StrenthGainedFrame.SliceScale = 0.120
+
+Vanish.StrengthGained.Name = "StrengthGained"
+Vanish.StrengthGained.Parent = Vanish.StrenthGainedFrame
+Vanish.StrengthGained.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.StrengthGained.BackgroundTransparency = 1.000
+Vanish.StrengthGained.Size = UDim2.new(0, 388, 0, 38)
+Vanish.StrengthGained.Text = "StrengthGained: 0"
+Vanish.StrengthGained.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.StrengthGained.TextScaled = true
+Vanish.StrengthGained.TextSize = 14.000
+Vanish.StrengthGained.TextWrapped = true
+
+Vanish.UIAspectRatioConstraint_114.Parent = Vanish.StrengthGained
+Vanish.UIAspectRatioConstraint_114.AspectRatio = 10.211
+
+Vanish.UIAspectRatioConstraint_115.Parent = Vanish.StrenthGainedFrame
+Vanish.UIAspectRatioConstraint_115.AspectRatio = 10.211
+
+Vanish.WinsGainedFrame.Name = "WinsGainedFrame"
+Vanish.WinsGainedFrame.Parent = Vanish.InfoFrame
+Vanish.WinsGainedFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.WinsGainedFrame.BackgroundTransparency = 1.000
+Vanish.WinsGainedFrame.Position = UDim2.new(0.0140000004, 0, 0.100000001, 0)
+Vanish.WinsGainedFrame.Size = UDim2.new(0, 388, 0, 38)
+Vanish.WinsGainedFrame.Image = "rbxassetid://3570695787"
+Vanish.WinsGainedFrame.ImageColor3 = Color3.fromRGB(109, 109, 109)
+Vanish.WinsGainedFrame.ScaleType = Enum.ScaleType.Slice
+Vanish.WinsGainedFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.WinsGainedFrame.SliceScale = 0.120
+
+Vanish.WinsGained.Name = "WinsGained"
+Vanish.WinsGained.Parent = Vanish.WinsGainedFrame
+Vanish.WinsGained.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.WinsGained.BackgroundTransparency = 1.000
+Vanish.WinsGained.Size = UDim2.new(0, 388, 0, 38)
+Vanish.WinsGained.Text = "WinsGained: 0"
+Vanish.WinsGained.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.WinsGained.TextScaled = true
+Vanish.WinsGained.TextSize = 14.000
+Vanish.WinsGained.TextWrapped = true
+
+Vanish.UIAspectRatioConstraint_116.Parent = Vanish.WinsGained
+Vanish.UIAspectRatioConstraint_116.AspectRatio = 10.211
+
+Vanish.UIAspectRatioConstraint_117.Parent = Vanish.WinsGainedFrame
+Vanish.UIAspectRatioConstraint_117.AspectRatio = 10.211
+
+Vanish.PlayerToSpyFrame.Name = "PlayerToSpyFrame"
+Vanish.PlayerToSpyFrame.Parent = Vanish.InfoFrame
+Vanish.PlayerToSpyFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.PlayerToSpyFrame.BackgroundTransparency = 1.000
+Vanish.PlayerToSpyFrame.Position = UDim2.new(0.0140000004, 0, 0.180000007, 0)
+Vanish.PlayerToSpyFrame.Size = UDim2.new(0, 388, 0, 38)
+Vanish.PlayerToSpyFrame.Image = "rbxassetid://3570695787"
+Vanish.PlayerToSpyFrame.ImageColor3 = Color3.fromRGB(109, 109, 109)
+Vanish.PlayerToSpyFrame.ScaleType = Enum.ScaleType.Slice
+Vanish.PlayerToSpyFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.PlayerToSpyFrame.SliceScale = 0.120
+
+Vanish.PlayerToSpy.Name = "PlayerToSpy"
+Vanish.PlayerToSpy.Parent = Vanish.PlayerToSpyFrame
+Vanish.PlayerToSpy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.PlayerToSpy.BackgroundTransparency = 1.000
+Vanish.PlayerToSpy.Size = UDim2.new(0, 388, 0, 38)
+Vanish.PlayerToSpy.Text = "Player"
+Vanish.PlayerToSpy.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.PlayerToSpy.TextScaled = true
+Vanish.PlayerToSpy.TextSize = 14.000
+Vanish.PlayerToSpy.TextWrapped = true
+
+Vanish.UIAspectRatioConstraint_118.Parent = Vanish.PlayerToSpy
+Vanish.UIAspectRatioConstraint_118.AspectRatio = 10.211
+
+Vanish.UIAspectRatioConstraint_119.Parent = Vanish.PlayerToSpyFrame
+Vanish.UIAspectRatioConstraint_119.AspectRatio = 10.211
+
+Vanish.PlayerToSpyButtonFrame.Name = "PlayerToSpyButtonFrame"
+Vanish.PlayerToSpyButtonFrame.Parent = Vanish.InfoFrame
+Vanish.PlayerToSpyButtonFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.PlayerToSpyButtonFrame.BackgroundTransparency = 1.000
+Vanish.PlayerToSpyButtonFrame.Position = UDim2.new(0.0140000004, 0, 0.25999999, 0)
+Vanish.PlayerToSpyButtonFrame.Size = UDim2.new(0, 388, 0, 38)
+Vanish.PlayerToSpyButtonFrame.Image = "rbxassetid://3570695787"
+Vanish.PlayerToSpyButtonFrame.ImageColor3 = Color3.fromRGB(109, 109, 109)
+Vanish.PlayerToSpyButtonFrame.ScaleType = Enum.ScaleType.Slice
+Vanish.PlayerToSpyButtonFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.PlayerToSpyButtonFrame.SliceScale = 0.120
+
+Vanish.PlayerToSpyButton.Name = "PlayerToSpyButton"
+Vanish.PlayerToSpyButton.Parent = Vanish.PlayerToSpyButtonFrame
+Vanish.PlayerToSpyButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.PlayerToSpyButton.BackgroundTransparency = 1.000
+Vanish.PlayerToSpyButton.Size = UDim2.new(0, 388, 0, 38)
+Vanish.PlayerToSpyButton.Text = "View Strength"
+Vanish.PlayerToSpyButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.PlayerToSpyButton.TextScaled = true
+Vanish.PlayerToSpyButton.TextSize = 14.000
+Vanish.PlayerToSpyButton.TextWrapped = true
+
+Vanish.UIAspectRatioConstraint_120.Parent = Vanish.PlayerToSpyButton
+Vanish.UIAspectRatioConstraint_120.AspectRatio = 10.211
+
+Vanish.UIAspectRatioConstraint_121.Parent = Vanish.PlayerToSpyButtonFrame
+Vanish.UIAspectRatioConstraint_121.AspectRatio = 10.211
+
+Vanish.UIAspectRatioConstraint_122.Parent = Vanish.InfoFrame
+Vanish.UIAspectRatioConstraint_122.AspectRatio = 1.460
+
+Vanish.CreditsFrame.Name = "CreditsFrame"
+Vanish.CreditsFrame.Parent = Vanish.CoreFrame
+Vanish.CreditsFrame.Active = true
+Vanish.CreditsFrame.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Vanish.CreditsFrame.BorderColor3 = Color3.fromRGB(138, 138, 138)
+Vanish.CreditsFrame.Position = UDim2.new(0.224999994, 0, 0.108999997, 0)
+Vanish.CreditsFrame.Size = UDim2.new(0, 416, 0, 285)
+Vanish.CreditsFrame.Visible = false
+
+Vanish.Discord.Name = "Discord"
+Vanish.Discord.Parent = Vanish.CreditsFrame
+Vanish.Discord.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Discord.BackgroundTransparency = 1.000
+Vanish.Discord.Position = UDim2.new(0.0144230779, 0, 0.0204580221, 0)
+Vanish.Discord.Size = UDim2.new(0, 388, 0, 38)
+Vanish.Discord.Image = "rbxassetid://3570695787"
+Vanish.Discord.ImageColor3 = Color3.fromRGB(109, 109, 109)
+Vanish.Discord.ScaleType = Enum.ScaleType.Slice
+Vanish.Discord.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Discord.SliceScale = 0.120
+
+Vanish.TextLabel_15.Parent = Vanish.Discord
+Vanish.TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.TextLabel_15.BackgroundTransparency = 1.000
+Vanish.TextLabel_15.Position = UDim2.new(0.0231958758, 0, 0, 0)
+Vanish.TextLabel_15.Size = UDim2.new(0, 93, 0, 38)
+Vanish.TextLabel_15.Text = "Discord"
+Vanish.TextLabel_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.TextLabel_15.TextScaled = true
+Vanish.TextLabel_15.TextSize = 14.000
+Vanish.TextLabel_15.TextWrapped = true
+
+Vanish.UIAspectRatioConstraint_123.Parent = Vanish.TextLabel_15
+Vanish.UIAspectRatioConstraint_123.AspectRatio = 2.447
+
+Vanish.Disabled_13.Name = "Disabled"
+Vanish.Disabled_13.Parent = Vanish.Discord
+Vanish.Disabled_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Disabled_13.BackgroundTransparency = 1.000
+Vanish.Disabled_13.Position = UDim2.new(0.835502684, 0, 0.342105269, 0)
+Vanish.Disabled_13.Size = UDim2.new(0, 42, 0, 12)
+Vanish.Disabled_13.Image = "rbxassetid://3570695787"
+Vanish.Disabled_13.ImageColor3 = Color3.fromRGB(0, 0, 255)
+Vanish.Disabled_13.ScaleType = Enum.ScaleType.Slice
+Vanish.Disabled_13.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Disabled_13.SliceScale = 0.120
+
+Vanish.Frame_25.Name = "Frame"
+Vanish.Frame_25.Parent = Vanish.Disabled_13
+Vanish.Frame_25.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.Frame_25.BackgroundTransparency = 1.000
+Vanish.Frame_25.Position = UDim2.new(0.238095239, 0, -0.49999997, 0)
+Vanish.Frame_25.Size = UDim2.new(0, 22, 0, 23)
+Vanish.Frame_25.Image = "rbxassetid://3570695787"
+Vanish.Frame_25.ScaleType = Enum.ScaleType.Slice
+Vanish.Frame_25.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.Frame_25.SliceScale = 0.120
+
+Vanish.UIAspectRatioConstraint_124.Parent = Vanish.Frame_25
+Vanish.UIAspectRatioConstraint_124.AspectRatio = 0.957
+
+Vanish.UIAspectRatioConstraint_125.Parent = Vanish.Disabled_13
+Vanish.UIAspectRatioConstraint_125.AspectRatio = 3.500
+
+Vanish.DiscordButton.Name = "DiscordButton"
+Vanish.DiscordButton.Parent = Vanish.Discord
+Vanish.DiscordButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.DiscordButton.BackgroundTransparency = 1.000
+Vanish.DiscordButton.Position = UDim2.new(0.817461491, 0, 0.184210524, 0)
+Vanish.DiscordButton.Size = UDim2.new(0, 48, 0, 23)
+Vanish.DiscordButton.Font = Enum.Font.SourceSans
+Vanish.DiscordButton.Text = ""
+Vanish.DiscordButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+Vanish.DiscordButton.TextSize = 14.000
+
+Vanish.UIAspectRatioConstraint_126.Parent = Vanish.DiscordButton
+Vanish.UIAspectRatioConstraint_126.AspectRatio = 2.087
+
+Vanish.UIAspectRatioConstraint_127.Parent = Vanish.Discord
+Vanish.UIAspectRatioConstraint_127.AspectRatio = 10.211
+
+Vanish.UIAspectRatioConstraint_128.Parent = Vanish.CreditsFrame
+Vanish.UIAspectRatioConstraint_128.AspectRatio = 1.460
+
+Vanish.SettingFrame.Name = "SettingFrame"
+Vanish.SettingFrame.Parent = Vanish.CoreFrame
+Vanish.SettingFrame.Active = true
+Vanish.SettingFrame.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Vanish.SettingFrame.BorderColor3 = Color3.fromRGB(138, 138, 138)
+Vanish.SettingFrame.Position = UDim2.new(0.224999994, 0, 0.108999997, 0)
+Vanish.SettingFrame.Size = UDim2.new(0, 416, 0, 285)
+Vanish.SettingFrame.Visible = false
+
+Vanish.ToolFrame.Name = "ToolFrame"
+Vanish.ToolFrame.Parent = Vanish.SettingFrame
+Vanish.ToolFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.ToolFrame.BackgroundTransparency = 1.000
+Vanish.ToolFrame.Position = UDim2.new(0.0144230779, 0, 0.0204580221, 0)
+Vanish.ToolFrame.Size = UDim2.new(0, 388, 0, 38)
+Vanish.ToolFrame.Image = "rbxassetid://3570695787"
+Vanish.ToolFrame.ImageColor3 = Color3.fromRGB(109, 109, 109)
+Vanish.ToolFrame.ScaleType = Enum.ScaleType.Slice
+Vanish.ToolFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.ToolFrame.SliceScale = 0.120
+
+Vanish.TextLabel_16.Parent = Vanish.ToolFrame
+Vanish.TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.TextLabel_16.BackgroundTransparency = 1.000
+Vanish.TextLabel_16.Position = UDim2.new(0.0231958758, 0, 0, 0)
+Vanish.TextLabel_16.Size = UDim2.new(0, 93, 0, 38)
+Vanish.TextLabel_16.Text = "Tool"
+Vanish.TextLabel_16.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.TextLabel_16.TextScaled = true
+Vanish.TextLabel_16.TextSize = 14.000
+Vanish.TextLabel_16.TextWrapped = true
+
+Vanish.UIAspectRatioConstraint_129.Parent = Vanish.TextLabel_16
+Vanish.UIAspectRatioConstraint_129.AspectRatio = 2.447
+
+Vanish.ToolChoice.Name = "ToolChoice"
+Vanish.ToolChoice.Parent = Vanish.ToolFrame
+Vanish.ToolChoice.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+Vanish.ToolChoice.Position = UDim2.new(0.644329906, 0, 0, 0)
+Vanish.ToolChoice.Size = UDim2.new(0, 129, 0, 38)
+Vanish.ToolChoice.Text = "Double Weight"
+Vanish.ToolChoice.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.ToolChoice.TextScaled = true
+Vanish.ToolChoice.TextSize = 14.000
+Vanish.ToolChoice.TextWrapped = true
+
+Vanish.UIAspectRatioConstraint_130.Parent = Vanish.ToolChoice
+Vanish.UIAspectRatioConstraint_130.AspectRatio = 3.395
+
+Vanish.ToolOption.Name = "ToolOption"
+Vanish.ToolOption.Parent = Vanish.ToolFrame
+Vanish.ToolOption.BackgroundColor3 = Color3.fromRGB(99, 99, 99)
+Vanish.ToolOption.Position = UDim2.new(0.644329906, 0, 0.921052694, 0)
+Vanish.ToolOption.Size = UDim2.new(0, 129, 0, 38)
+Vanish.ToolOption.Visible = false
+Vanish.ToolOption.Text = "Dumbell"
+Vanish.ToolOption.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.ToolOption.TextScaled = true
+Vanish.ToolOption.TextSize = 14.000
+Vanish.ToolOption.TextWrapped = true
+
+Vanish.UIAspectRatioConstraint_131.Parent = Vanish.ToolOption
+Vanish.UIAspectRatioConstraint_131.AspectRatio = 3.395
+
+Vanish.UIAspectRatioConstraint_132.Parent = Vanish.ToolFrame
+Vanish.UIAspectRatioConstraint_132.AspectRatio = 10.211
+
+Vanish.UIAspectRatioConstraint_133.Parent = Vanish.SettingFrame
+Vanish.UIAspectRatioConstraint_133.AspectRatio = 1.460
+
+Vanish.BlueFog.Name = "BlueFog"
+Vanish.BlueFog.Parent = Vanish.SettingFrame
+Vanish.BlueFog.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.BlueFog.BackgroundTransparency = 1.000
+Vanish.BlueFog.Position = UDim2.new(0.0140000004, 0, 0.100000001, 0)
+Vanish.BlueFog.Size = UDim2.new(0, 388, 0, 38)
+Vanish.BlueFog.Image = "rbxassetid://3570695787"
+Vanish.BlueFog.ImageColor3 = Color3.fromRGB(109, 109, 109)
+Vanish.BlueFog.ScaleType = Enum.ScaleType.Slice
+Vanish.BlueFog.SliceCenter = Rect.new(100, 100, 100, 100)
+Vanish.BlueFog.SliceScale = 0.120
+
+Vanish.TextLabel_17.Parent = Vanish.BlueFog
+Vanish.TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.TextLabel_17.BackgroundTransparency = 1.000
+Vanish.TextLabel_17.Position = UDim2.new(0.0231958758, 0, 0, 0)
+Vanish.TextLabel_17.Size = UDim2.new(0, 169, 0, 38)
+Vanish.TextLabel_17.Text = "Destroy Blue Fog"
+Vanish.TextLabel_17.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.TextLabel_17.TextScaled = true
+Vanish.TextLabel_17.TextSize = 14.000
+Vanish.TextLabel_17.TextWrapped = true
+
+Vanish.UIAspectRatioConstraint_134.Parent = Vanish.TextLabel_17
+Vanish.UIAspectRatioConstraint_134.AspectRatio = 4.447
+
+Vanish.BlueFogButton.Name = "BlueFogButton"
+Vanish.BlueFogButton.Parent = Vanish.BlueFog
+Vanish.BlueFogButton.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+Vanish.BlueFogButton.Position = UDim2.new(0.644329906, 0, 0, 0)
+Vanish.BlueFogButton.Size = UDim2.new(0, 129, 0, 38)
+Vanish.BlueFogButton.Text = "Destroy"
+Vanish.BlueFogButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vanish.BlueFogButton.TextScaled = true
+Vanish.BlueFogButton.TextSize = 14.000
+Vanish.BlueFogButton.TextWrapped = true
+
+Vanish.UIAspectRatioConstraint_135.Parent = Vanish.BlueFogButton
+Vanish.UIAspectRatioConstraint_135.AspectRatio = 3.395
+
+Vanish.UIAspectRatioConstraint_136.Parent = Vanish.BlueFog
+Vanish.UIAspectRatioConstraint_136.AspectRatio = 10.211
+
+Vanish.UIAspectRatioConstraint_137.Parent = Vanish.CoreFrame
+Vanish.UIAspectRatioConstraint_137.AspectRatio = 1.678
+
+--//UI
+Vanish.CoreFrame.Active = true
+Vanish.CoreFrame.Draggable = true
+Vanish.Vanish.ResetOnSpawn = false
+
+--//Toggle
+Plr = game.Players.LocalPlayer
+
+Plr:GetMouse().KeyDown:Connect(function(K)
+	if K == "l" then
+		if Vanish.CoreFrame.Visible == true then
+			Vanish.CoreFrame.Visible = false
+		else
+			Vanish.CoreFrame.Visible = true
+		end
+	end
+end)
+
+--//Script
+local player = game.Players.LocalPlayer
+local GroupId = 10914980
+local Lift = false
+local AntiAfk = false
+local LessPing = false
+local Rumble = false
+local Camera = false
+local LockPlayer = false
+local FollowPlayer = false
+local EquipTool = false
+local ViewTools = false
+local RainbowGloves = false
+local RumbleJoin = false
+local RumbleReset = false
+local flwplr = Vanish.PlayerToDrop
+
+if player:IsInGroup(GroupId) then
+	Vanish.ToolCountFrame.Visible = true
+	Vanish.ToolCountToggleFrame.Visible = true
+	Vanish.AutoJoinFrame.Visible = true
+	Vanish.AutoResetFrame.Visible = true
+	Vanish.PlayerToKillFrame.Visible = true
+	Vanish.PlayerToKillButtonFrame.Visible = true
+end
+
+game:GetService('RunService').Stepped:connect(function()
+	if FollowPlayer then
+		Plr.Character.HumanoidRootPart.CFrame = game:GetService("Players")[flwplr.Text].Character.HumanoidRootPart.CFrame + game:GetService("Players")[flwplr.Text].Character.HumanoidRootPart.CFrame.lookVector * -5
+		wait(.2)
+	end
+end)
+
+local abbreviations = {'','K','M','B','T','Qd','Qn','Sx','Sp','O','N','D','Und','DD','Td','Qtd','QnD' ,'SxD' ,'SpD' ,'OcD' ,'NoD' ,'VgN' ,'UvG' ,'DvG' ,'TvG' ,'QtV'}
+
+local function roundNumber(Amount)
+	local Text = tostring(Amount)
+	local chosenAbbreviation
+
+	for i = 1, #abbreviations do
+		if tonumber(Amount) < 10^(i*3) then
+			Text = math.floor(Amount/((10^((i-1)*3))/100))/(100).. abbreviations[i]
+			break
+		end
+	end
+	return Text
+end
+
+Vanish.Farming.MouseButton1Click:connect(function()
+	if Vanish.FarmingFrame.Visible == false then
+		Vanish.DroppingFrame.Visible = false
+		Vanish.MiscFrame.Visible = false
+		Vanish.InfoFrame.Visible = false
+		Vanish.CreditsFrame.Visible = false
+		Vanish.SettingFrame.Visible = false
+		Vanish.FarmingFrame.Visible = true
+	end
+end)
+
+Vanish.Dropping.MouseButton1Click:connect(function()
+	if Vanish.DroppingFrame.Visible == false then
+		Vanish.DroppingFrame.Visible = true
+		Vanish.MiscFrame.Visible = false
+		Vanish.InfoFrame.Visible = false
+		Vanish.CreditsFrame.Visible = false
+		Vanish.SettingFrame.Visible = false
+		Vanish.FarmingFrame.Visible = false
+	end
+end)
+
+Vanish.Misc.MouseButton1Click:connect(function()
+	if Vanish.MiscFrame.Visible == false then
+		Vanish.DroppingFrame.Visible = false
+		Vanish.MiscFrame.Visible = true
+		Vanish.InfoFrame.Visible = false
+		Vanish.CreditsFrame.Visible = false
+		Vanish.SettingFrame.Visible = false
+		Vanish.FarmingFrame.Visible = false
+	end
+end)
+
+Vanish.Info.MouseButton1Click:connect(function()
+	if Vanish.InfoFrame.Visible == false then
+		Vanish.DroppingFrame.Visible = false
+		Vanish.MiscFrame.Visible = false
+		Vanish.InfoFrame.Visible = true
+		Vanish.CreditsFrame.Visible = false
+		Vanish.SettingFrame.Visible = false
+		Vanish.FarmingFrame.Visible = false
+	end
+end)
+
+Vanish.Credits.MouseButton1Click:connect(function()
+	if Vanish.CreditsFrame.Visible == false then
+		Vanish.DroppingFrame.Visible = false
+		Vanish.MiscFrame.Visible = false
+		Vanish.InfoFrame.Visible = false
+		Vanish.CreditsFrame.Visible = true
+		Vanish.SettingFrame.Visible = false
+		Vanish.FarmingFrame.Visible = false
+	end
+end)
+
+Vanish.Setting.MouseButton1Click:connect(function()
+	if Vanish.SettingFrame.Visible == false then
+		Vanish.DroppingFrame.Visible = false
+		Vanish.MiscFrame.Visible = false
+		Vanish.InfoFrame.Visible = false
+		Vanish.CreditsFrame.Visible = false
+		Vanish.SettingFrame.Visible = true
+		Vanish.FarmingFrame.Visible = false
+	end
+end)
+
+Vanish.LiftButton.MouseButton1Click:connect(function()
+	if Lift == false then
+		Lift = true
+		Vanish.Disabled.Visible = false
+		Vanish.Active.Visible = true
+		local waittime = 0.7
+		local SettingTool = Vanish.ToolChoice
+		if player:IsInGroup(GroupId) then
+			local num = 0
+			for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+				if v.Name == SettingTool.Text then
+					num += 1
+				end
+			end
+			local endnum = num
+			if endnum  >= 1500 then
+				waittime = 1
+			elseif endnum >= 1350 then
+				waittime = 0.9
+			elseif endnum >= 1200 then
+				waittime = 0.8
+			elseif endnum >= 1050 then
+				waittime = 0.7
+			elseif endnum >= 900 then
+				waittime = 0.6
+			elseif endnum >= 750 then
+				waittime = 0.5
+			elseif endnum >= 600 then
+				waittime = 0.4
+			elseif endnum >= 450 then
+				waittime = 0.3
+			elseif endnum >= 300 then
+				waittime = 0.2
+			elseif endnum >= 150 then
+				waittime = 0.1
+			else
+				waittime = 0
+			end
+		end
+		while Lift == true do
+			local endwait = waittime
+			wait(endwait)
+			for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+				if v.Name == SettingTool.Text then
+					v:Activate()
+				else
+					for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+						if v.Name == SettingTool.Text then
+							v:Activate()
+							v.Parent = game.Players.LocalPlayer.Character
+						end
+					end
+				end
+			end
+		end
+	elseif Lift == true then
+		Lift = false
+		Vanish.Disabled.Visible = true
+		Vanish.Active.Visible = false
+	end
+end)
+
+Vanish.AntiAfkButton.MouseButton1Click:connect(function()
+	if AntiAfk == false then
+		AntiAfk = true
+		Vanish.Disabled_2.Visible = false
+		Vanish.Active_2.Visible = true
+		local VirtualUser=game:service'VirtualUser'
+		game:service'Players'.LocalPlayer.Idled:connect(function()
+			VirtualUser:CaptureController()
+			VirtualUser:ClickButton2(Vector2.new())
+		end)
+	elseif AntiAfk == true then
+		AntiAfk = false
+		Vanish.Disabled_2.Visible = true
+		Vanish.Active_2.Visible = false
+	end
+end)
+
+Vanish.LessPingButton.MouseButton1Click:connect(function()
+	if LessPing == false then
+		LessPing = true
+		Vanish.Disabled_3.Visible = false
+		Vanish.Active_3.Visible = true
+		local decalsyeeted = true -- Leaving this on makes games look shitty but the fps goes up by at least 20.
+		local g = game
+		local w = g.Workspace
+		local l = g.Lighting
+		local t = w.Terrain
+		t.WaterWaveSize = 0
+		t.WaterWaveSpeed = 0
+		t.WaterReflectance = 0
+		t.WaterTransparency = 0
+		l.GlobalShadows = false
+		l.FogEnd = 9e9
+		l.Brightness = 0
+		settings().Rendering.QualityLevel = "Level01"
+		for i,v in pairs(g:GetDescendants()) do
+			if v:IsA("Part") or v:IsA("Union") or v:IsA("MeshPart") or v:IsA("CornerWedgePart") or v:IsA("TrussPart") then
+				v.Material = "Plastic"
+				v.Reflectance = 0
+			elseif v:IsA("Decal") and decalsyeeted then
+				v.Transparency = 1
+			elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
+				v.Lifetime = NumberRange.new(0)
+			elseif v:IsA("Explosion") then
+				v.BlastPressure = 1
+				v.BlastRadius = 1
+			end
+		end
+		for i,e in pairs(l:GetChildren()) do
+			if e:IsA("BlurEffect") or e:IsA("SunRaysEffect") or e:IsA("ColorCorrectionEffect") or e:IsA("BloomEffect") or e:IsA("DepthOfFieldEffect") then
+				e.Enabled = false
+			end
+		end
+	elseif LessPing == true then
+		LessPing = false
+		Vanish.Disabled_3.Visible = true
+		Vanish.Active_3.Visible = false
+	end
+end)
+
+Vanish.RemoveHudButton.MouseButton1Click:connect(function()
+	if Rumble == false then
+		Rumble = true
+		Vanish.Disabled_4.Visible = false
+		Vanish.Active_4.Visible = true
+		game:GetService("Players").LocalPlayer.PlayerGui.HUD.Frame.ProteinBuy:Destroy()
+		game:GetService("Players").LocalPlayer.PlayerGui.HUD.Frame.OpenShop:Destroy()
+		game:GetService("Players").LocalPlayer.PlayerGui.HUD.Frame.OpenReb:Destroy()
+		game:GetService("Players").LocalPlayer.PlayerGui.HUD.Frame.ImageLabel:Destroy()
+		game:GetService("Players").LocalPlayer.PlayerGui.HUD.Frame.OpenPack:Destroy()
+		game:GetService("Players").LocalPlayer.PlayerGui.HUD.Frame.PopSound:Destroy()
+		game:GetService("Players").LocalPlayer.PlayerGui.HUD.Frame.BlackMarket:Destroy()
+		game:GetService("Players").LocalPlayer.PlayerGui.HUD.Frame.LiftRemind:Destroy()
+		game:GetService("Players").LocalPlayer.PlayerGui.HUD.Frame.MuscleGain:Destroy()
+		game:GetService("Players").LocalPlayer.PlayerGui.HUD.Frame.RebFrame:Destroy()
+		game:GetService("Players").LocalPlayer.PlayerGui.HUD.Frame.ShopFrame:Destroy()
+		game:GetService("Players").LocalPlayer.PlayerGui.HUD.Frame.OpenSkins:Destroy()
+		game:GetService("Players").LocalPlayer.PlayerGui.HUD.Frame.Bar:Destroy()
+		game:GetService("Players").LocalPlayer.PlayerGui.HUD.Frame.StrengthHolder.ImageLabel:Destroy()
+		game:GetService("Players").LocalPlayer.PlayerGui.HUD.Frame.StrengthHolder.TextLabel.TextLabel:Destroy()
+		game:GetService("Players").LocalPlayer.PlayerGui.HUD.Frame.CashHolder:Destroy()
+		game:GetService("Players").LocalPlayer.PlayerGui.HUD.Frame.CashButton:Destroy()
+		game:GetService("Players").LocalPlayer.PlayerGui.HUD.Frame.RumbleHolder:Destroy()
+		game:GetService("ReplicatedFirst").TourneyQ:Destroy()
+	elseif Rumble == true then
+		Rumble = false
+		Vanish.Disabled_4.Visible = true
+		Vanish.Active_4.Visible = false
+	end
+end)
+
+Vanish.RemoveCamButton.MouseButton1Click:connect(function()
+	if Camera == false then
+		Camera = true
+		Vanish.Disabled_5.Visible = false
+		Vanish.Active_5.Visible = true
+		game:GetService("CoreGui").RobloxGui.Backpack:Destroy()
+		game:GetService("Workspace").Camera:Destroy()
+	elseif Camera == true then
+		Camera = false
+		Vanish.Disabled_5.Visible = true
+		Vanish.Active_5.Visible = false
+	end
+end)
+
+Vanish.LockPlayerButton.MouseButton1Click:connect(function()
+	if LockPlayer == false then
+		LockPlayer = true
+		Vanish.Disabled_6.Visible = false
+		Vanish.Active_6.Visible = true
+		for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+			if v:IsA("Part") then
+				v.Anchored = true
+			end
+		end
+
+
+		for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+			if v:IsA("MeshPart") then
+				v.Anchored = true
+			end
+		end
+	elseif LockPlayer == true then
+		LockPlayer = false
+		Vanish.Disabled_6.Visible = true
+		Vanish.Active_6.Visible = false
+		for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+			if v:IsA("Part") then
+				v.Anchored = false
+			end
+		end
+
+
+		for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+			if v:IsA("MeshPart") then
+				v.Anchored = false
+			end
+		end
+	end
+end)
+
+Vanish.TptoRumbleButton.MouseButton1Click:connect(function()
+	local plr = game.Players.LocalPlayer
+	local char = plr.Character
+	char.HumanoidRootPart.CFrame = CFrame.new(-1977.9436, 510, -5295.2124, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+
+Vanish.FollowButton.MouseButton1Click:connect(function()
+	if FollowPlayer == false then
+		FollowPlayer = true
+		Vanish.Disabled_7.Visible = false
+		Vanish.Active_7.Visible = true
+	elseif FollowPlayer == true then
+		FollowPlayer = false
+		Vanish.Disabled_7.Visible = true
+		Vanish.Active_7.Visible = false
+	end
+end)
+
+Vanish.EquipButton.MouseButton1Click:connect(function()
+	if EquipTool == false then
+		EquipTool = true
+		Vanish.Disabled_8.Visible = false
+		Vanish.Active_8.Visible = true
+		local EquipedTool = Vanish.ToolChoice
+		while EquipTool == true do
+			wait(1)
+			for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+				if v.Name == EquipedTool.Text then
+					v:Activate()
+					v.Parent = game.Players.LocalPlayer.Character
+				end
+			end
+		end
+	elseif EquipTool == true then
+		EquipTool = false
+		Vanish.Disabled_8.Visible = true
+		Vanish.Active_8.Visible = false
+	end
+end)
+
+Vanish.ToolCountButton.MouseButton1Click:connect(function()
+	if player:IsInGroup(GroupId) then
+		if ViewTools == false then
+			ViewTools = true
+			Vanish.Disabled_9.Visible = false
+			Vanish.Active_9.Visible = true
+			while ViewTools == true do
+				wait(.3)
+				local num = 0
+				for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+					if v.Name == "Double Weight" then
+						num += 1
+					end
+				end
+				local TextNumber = num
+				Vanish.ToolCount.Text = TextNumber
+			end
+		elseif ViewTools == true then
+			ViewTools = false
+			Vanish.Disabled_9.Visible = true
+			Vanish.Active_9.Visible = false
+			Vanish.ToolCount.Text = "Disabled"
+		end
+	end
+end)
+
+Vanish.Small.MouseButton1Click:connect(function()
+	for i,v in pairs(game.Players.LocalPlayer.Character.Humanoid:GetChildren()) do
+		if v:IsA("NumberValue") then
+			v:Destroy()
+		end
+	end
+end)
+
+Vanish.GiveGloves.MouseButton1Click:connect(function()
+	local args = {
+		[1] = "Wamen",
+	}
+
+	game:GetService("ReplicatedStorage").Remotes["SetMagic1"]:FireServer(unpack(args))
+	wait(.1)
+	local args = {
+		[1] = "Waffle",
+	}
+
+	game:GetService("ReplicatedStorage").Remotes["SetMagic1"]:FireServer(unpack(args))
+	wait(.1)
+	local args = {
+		[1] = "Donut",
+	}
+
+	game:GetService("ReplicatedStorage").Remotes["SetMagic1"]:FireServer(unpack(args))
+	wait(.1)
+	local args = {
+		[1] = "Pizza",
+	}
+
+	game:GetService("ReplicatedStorage").Remotes["SetMagic1"]:FireServer(unpack(args))
+	wait(.1)
+	local args = {
+		[1] = "Snow Camo",
+	}
+
+	game:GetService("ReplicatedStorage").Remotes["SetMagic1"]:FireServer(unpack(args))
+	wait(.1)
+	local args = {
+		[1] = "Dirt",
+	}
+
+	game:GetService("ReplicatedStorage").Remotes["SetMagic1"]:FireServer(unpack(args))
+	wait(.1)
+	local args = {
+		[1] = "Red",
+	}
+
+	game:GetService("ReplicatedStorage").Remotes["SetMagic1"]:FireServer(unpack(args))
+	wait(.1)
+	local args = {
+		[1] = "Green",
+	}
+
+	game:GetService("ReplicatedStorage").Remotes["SetMagic1"]:FireServer(unpack(args))
+	wait(.1)
+	local args = {
+		[1] = "Desert Camo",
+	}
+
+	game:GetService("ReplicatedStorage").Remotes["SetMagic1"]:FireServer(unpack(args))
+	wait(.1)
+	local args = {
+		[1] = "Bape",
+	}
+
+	game:GetService("ReplicatedStorage").Remotes["SetMagic1"]:FireServer(unpack(args))
+	wait(.1)
+	local args = {
+		[1] = "Bape Blue",
+	}
+
+	game:GetService("ReplicatedStorage").Remotes["SetMagic1"]:FireServer(unpack(args))
+	wait(.1)
+	local args = {
+		[1] = "Blue",
+	}
+
+	game:GetService("ReplicatedStorage").Remotes["SetMagic1"]:FireServer(unpack(args))
+	wait(.1)
+	local args = {
+		[1] = "Spongebob",
+	}
+
+	game:GetService("ReplicatedStorage").Remotes["SetMagic1"]:FireServer(unpack(args))
+	wait(.1)
+	local args = {
+		[1] = "Wanwood",
+	}
+
+	game:GetService("ReplicatedStorage").Remotes["SetMagic1"]:FireServer(unpack(args))
+	wait(.1)
+	local args = {
+		[1] = "Adurite",
+	}
+
+	game:GetService("ReplicatedStorage").Remotes["SetMagic1"]:FireServer(unpack(args))
+	wait(.1)
+	local args = {
+		[1] = "Rainbow",
+	}
+
+	game:GetService("ReplicatedStorage").Remotes["SetMagic1"]:FireServer(unpack(args))
+	wait(.1)
+	local args = {
+		[1] = "Cartoon",
+	}
+
+	game:GetService("ReplicatedStorage").Remotes["SetMagic1"]:FireServer(unpack(args))
+	wait(.1)
+	local args = {
+		[1] = "Grass",
+	}
+
+	game:GetService("ReplicatedStorage").Remotes["SetMagic1"]:FireServer(unpack(args))
+	wait(.1)
+	local args = {
+		[1] = "Black Iron",
+	}
+
+	game:GetService("ReplicatedStorage").Remotes["SetMagic1"]:FireServer(unpack(args))
+	wait(.1)
+	local args = {
+		[1] = "Pink",
+	}
+
+	game:GetService("ReplicatedStorage").Remotes["SetMagic1"]:FireServer(unpack(args))
+	wait(.1)
+	local args = {
+		[1] = "Bape Pink",
+	}
+
+	game:GetService("ReplicatedStorage").Remotes["SetMagic1"]:FireServer(unpack(args))
+	wait(.1)
+	local args = {
+		[1] = "Doge",
+	}
+
+	game:GetService("ReplicatedStorage").Remotes["SetMagic1"]:FireServer(unpack(args))
+	wait(.1)
+	local args = {
+		[1] = "Trump",
+	}
+
+	game:GetService("ReplicatedStorage").Remotes["SetMagic1"]:FireServer(unpack(args))
+	wait(.1)
+	local args = {
+		[1] = "White",
+	}
+
+	game:GetService("ReplicatedStorage").Remotes["SetMagic1"]:FireServer(unpack(args))
+	wait(.1)
+	local args = {
+		[1] = "Gold",
+	}
+
+	game:GetService("ReplicatedStorage").Remotes["SetMagic1"]:FireServer(unpack(args))
+	wait(.1)
+	local args = {
+		[1] = "Bluesteel",
+	}
+
+	game:GetService("ReplicatedStorage").Remotes["SetMagic1"]:FireServer(unpack(args))
+	wait(.1)
+end)
+
+Vanish.RaimbowGloves.MouseButton1Click:connect(function()
+	if RainbowGloves == false then
+		RainbowGloves = true
+		Vanish.Disabled_10.Visible = false
+		Vanish.Active_10.Visible = true
+		while RainbowGloves == true do
+			game.ReplicatedStorage.Remotes.SellWep:FireServer("Wamen")
+			wait(.1)
+			game.ReplicatedStorage.Remotes.SellWep:FireServer("Waffle")
+			wait(.1)
+			game.ReplicatedStorage.Remotes.SellWep:FireServer("Donut")
+			wait(.1)
+			game.ReplicatedStorage.Remotes.SellWep:FireServer("Pizza")
+			wait(.1)
+			game.ReplicatedStorage.Remotes.SellWep:FireServer("Snow Camo")
+			wait(.1)
+			game.ReplicatedStorage.Remotes.SellWep:FireServer("Dirt")
+			wait(.1)
+			game.ReplicatedStorage.Remotes.SellWep:FireServer("Red")
+			wait(.1)
+			game.ReplicatedStorage.Remotes.SellWep:FireServer("Green")
+			wait(.1)
+			game.ReplicatedStorage.Remotes.SellWep:FireServer("Desert Camo")
+			wait(.1)
+			game.ReplicatedStorage.Remotes.SellWep:FireServer("Bape")
+			wait(.1)
+			game.ReplicatedStorage.Remotes.SellWep:FireServer("Bape Blue")
+			wait(.1)
+			game.ReplicatedStorage.Remotes.SellWep:FireServer("Blue")
+			wait(.1)
+			game.ReplicatedStorage.Remotes.SellWep:FireServer("Spongebob")
+			wait(.1)
+			game.ReplicatedStorage.Remotes.SellWep:FireServer("Wanwood")
+			wait(.1)
+			game.ReplicatedStorage.Remotes.SellWep:FireServer("Adurite")
+			wait(.1)
+			game.ReplicatedStorage.Remotes.SellWep:FireServer("Rainbow")
+			wait(.1)
+			game.ReplicatedStorage.Remotes.SellWep:FireServer("Cartoon")
+			wait(.1)
+			game.ReplicatedStorage.Remotes.SellWep:FireServer("Grass")
+			wait(.1)
+			game.ReplicatedStorage.Remotes.SellWep:FireServer("Black Iron")
+			wait(.1)
+			game.ReplicatedStorage.Remotes.SellWep:FireServer("Pink")
+			wait(.1)
+			game.ReplicatedStorage.Remotes.SellWep:FireServer("Bape Pink")
+			wait(.1)
+			game.ReplicatedStorage.Remotes.SellWep:FireServer("Doge")
+			wait(.1)
+			game.ReplicatedStorage.Remotes.SellWep:FireServer("Trump")
+			wait(.1)
+			game.ReplicatedStorage.Remotes.SellWep:FireServer("White")
+			wait(.1)
+			game.ReplicatedStorage.Remotes.SellWep:FireServer("Gold")
+			wait(.1)
+			game.ReplicatedStorage.Remotes.SellWep:FireServer("Bluesteel")
+		end
+	elseif RainbowGloves == true then
+		RainbowGloves = false
+		Vanish.Disabled_10.Visible = true
+		Vanish.Active_10.Visible = false
+	end
+end)
+
+Vanish.AutoJoin.MouseButton1Click:connect(function()
+	if player:IsInGroup(GroupId) then
+		if RumbleJoin == false then
+			RumbleJoin = true
+			Vanish.Disabled_11.Visible = false
+			Vanish.Active_11.Visible = true
+			while RumbleJoin == true do
+				game:GetService('Players').LocalPlayer.PlayerGui.ChildAdded:Connect(function(c)
+					wait(.1)
+					local db = 'added'
+					if c.Name == 'TourneyQ' then
+						c:Destroy()
+						local db = 'entered'
+						game:GetService('ReplicatedStorage').TourneyEvents.Enter:FireServer()
+					end
+					print(db)
+				end)
+				wait(.5)
+			end
+		elseif RumbleJoin == true then
+			RumbleJoin = false
+			Vanish.Disabled_11.Visible = true
+			Vanish.Active_11.Visible = false
+		end
+	end
+end)
+
+Vanish.AutoReset.MouseButton1Click:connect(function()
+	if player:IsInGroup(GroupId) then
+		if RumbleReset == false then
+			RumbleReset = true
+			Vanish.Disabled_12.Visible = false
+			Vanish.Active_12.Visible = true
+			while RumbleReset == true do
+				local Timer = game:GetService("ReplicatedStorage").TourneyEvents.Timer
+				for i = 1, 8190809890890809890809808090980898998809808998098908090098 do wait()
+					if Timer.Value == 1 then wait(3)
+						for i,v in pairs(game:GetService("Workspace").Warriors.Waiting:GetChildren()) do if v.Name == game.Players.LocalPlayer.Name then v.Head:Destroy() 
+							end
+						end
+					end
+				end
+			end
+		elseif RumbleReset == true then
+			RumbleReset = false
+			Vanish.Disabled_12.Visible = true
+			Vanish.Active_12.Visible = false
+		end
+	end
+end)
+
+Vanish.KillPlayer.MouseButton1Click:connect(function()
+	if player:IsInGroup(GroupId) then
+		local Target = Vanish.PlayerToKill
+		local field = Target.Text
+
+		local LocalUser = game.Players.LocalPlayer
+		local ENEMY = field
+
+		for i = 1,4000 do
+			game.ReplicatedStorage.Remotes.Human_Punch:FireServer(LocalUser.Character.RightHand, "RightPunch", workspace[ENEMY].UpperTorso,5,true,"RightPunch",game.Players.LocalPlayer.Backpack.Boxing.Handle.Hit,5)
+			wait()
+		end
+	end
+end)
+
+Vanish.PlayerToSpyButton.MouseButton1Click:connect(function()
+	local PlayerStrength = Vanish.PlayerToSpy
+	if not game.Players[PlayerStrength.Text] then
+		PlayerStrength.Text = "Player Not Found!"
+	else
+		local Strength = game:WaitForChild("ReplicatedStorage").Data[PlayerStrength.Text].Strength
+		PlayerStrength.Text = ""..roundNumber(Strength.Value)
+	end
+end)
+
+Vanish.DiscordButton.MouseButton1Click:connect(function()
+	setclipboard("discord.gg/XVJvy3T7rq")
+end)
+
+Vanish.ToolChoice.MouseButton1Click:connect(function()
+	if Vanish.ToolChoice.Text == "Double Weight" then
+		Vanish.ToolChoice.Text = "Dumbell"
+	elseif Vanish.ToolChoice.Text == "Dumbell" then
+		Vanish.ToolChoice.Text = "Double Weight"
+	end
+end)
+
+Vanish.BlueFogButton.MouseButton1Click:connect(function()
+	game:GetService("Lighting").Atmosphere:Destroy()
+end)
+
+local str = game:GetService("Players").LocalPlayer.leaderstats.Strength;
+local curvalue = str.Value;
+local earned = 0;
+str:GetPropertyChangedSignal("Value"):Connect(function()
+	local delta = (str.Value - curvalue);
+	earned += delta;
+	Vanish.StrengthGained.Text = "Strength Earned: "..roundNumber(earned);
+	curvalue = str.Value;
+end)
+
+local str = game:GetService("Players").LocalPlayer.leaderstats.Wins;
+local curvalue = str.Value;
+local earned = 0;
+str:GetPropertyChangedSignal("Value"):Connect(function()
+	local delta = (str.Value - curvalue);
+	Vanish.WinsGained.Text = "Wins Earned: "..roundNumber(earned);
+	curvalue = str.Value;
+end)
